@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../CSS/log-in.css">
+    <link rel="stylesheet" href="../CSS/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In | MARVEL</title>
 </head>
 <body>
-    
+    <section>
+        <div class="container">
+            <input type="checkbox" id="signup_toggle">
+            <form class="form">
+                <div class="form_front">
+                    <div class="form_details">Log in</div>
+                    <input placeholder="Nombre de Usuario" class="input" type="text" required>
+                    <input placeholder="Contraseña" class="input" type="text" required>
+                    <button class="btn">Log in</button>
+                    <span class="switch">¿No tienes una cuenta? 
+                        <label class="signup_tog" for="signup_toggle">
+                        Crear cuenta
+                        </label>
+                    </span>
+                </div>
+                <div class="form_back">
+                    <div class="form_details">Sign Up</div>
+                    <input placeholder="Nombre" class="input" type="text" required>
+                    <input placeholder="Nombre de Usuario" class="input" type="text" required>
+                    <input placeholder="Email" class="input" type="text" required>
+                    <input placeholder="Contraseña" class="input" type="text" required>
+                    <input placeholder="Confirmar Contraseña" class="input" type="text" required>
+                    <button class="btn">Sign up</button>
+                    <span class="switch">¿Ya tienes una cuenta? 
+                        <label class="signup_tog" for="signup_toggle">
+                            Iniciar sesión
+                        </label>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
