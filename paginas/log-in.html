@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In | MARVEL</title>
 </head>
-<body>
+<body id="body-form">
     <section>
-        <div class="container">
+        <div class="container-form">
             <input type="checkbox" id="signup_toggle">
             <form class="form">
                 <div class="form_front">
-                    <div class="form_details">Log in</div>
+                    <div class="form_details">Iniciar Sesión</div>
                     <input placeholder="Nombre de Usuario" class="input" type="text" required>
                     <input placeholder="Contraseña" class="input" type="text" required>
-                    <button class="btn">Log in</button>
+                    <button class="btn">Login</button>
                     <span class="switch">¿No tienes una cuenta? 
                         <label class="signup_tog" for="signup_toggle">
                         Crear cuenta
@@ -23,7 +26,7 @@
                     </span>
                 </div>
                 <div class="form_back">
-                    <div class="form_details">Sign Up</div>
+                    <div class="form_details">Registrarse</div>
                     <input placeholder="Nombre" class="input" type="text" required>
                     <input placeholder="Nombre de Usuario" class="input" type="text" required>
                     <input placeholder="Email" class="input" type="text" required>
@@ -39,5 +42,7 @@
             </form>
         </div>
     </section>
+
+    
 </body>
 </html>

@@ -1,5 +1,13 @@
 * {
   margin: 0;
+  padding: 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
@@ -200,7 +208,7 @@ body {
   margin: 0;
   box-sizing: border-box; }
 
-body {
+#body-form {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -210,13 +218,13 @@ body {
   background-position: center;
   background-size: cover; }
 
-.container {
+.container-form {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .container #signup_toggle {
+  .container-form #signup_toggle {
     display: none; }
-    .container #signup_toggle:checked + .form {
+    .container-form #signup_toggle:checked + .form {
       transform: rotateY(-180deg); }
 
 .form {
@@ -242,6 +250,7 @@ body {
   .form .form_back {
     transform: rotateY(-180deg); }
   .form .form_details {
+    font-family: "Prompt", sans-serif;
     font-size: 25px;
     font-weight: 600;
     padding-bottom: 10px;
