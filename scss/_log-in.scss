@@ -1,7 +1,11 @@
-$colorPrimarioSombra: rgb(56, 0, 0);
-$colorSecundarioSombra: rgba(255, 56, 56, 0.6);
+$colorPrimarioSombra: rgb(24, 24, 24);
+$colorFondoForm: #464646f1;
+$colorSecundarioSombra: rgba(99, 97, 97, 0.6);
+$colorLetraDetalles: rgb(223, 222, 222);
 $fondoRegistro: url(../assets/img/fondo-login.png);
 $letraTitulos: "Prompt", sans-serif;
+
+
 *{
   margin: 0;
   box-sizing: border-box;
@@ -16,6 +20,10 @@ $letraTitulos: "Prompt", sans-serif;
     background-position: center;
     background-size: cover;
 }
+
+@import "menuAlternativo";
+
+
 .container-form {
     display: flex;
     justify-content: center;
@@ -28,59 +36,59 @@ $letraTitulos: "Prompt", sans-serif;
         transform: rotateY(-180deg);
       }
     }
-  }
-
-
-  
-  .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform-style: preserve-3d;
-    transition: all 1s ease;
-  
-    .form_front, .form_back {
-      background-color: #6d0000d8;
+    .form {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 20px;
-      position: absolute;
-      backface-visibility: hidden;
-      padding: 65px 45px;
-      border-radius: 15px;
-      box-shadow: inset 2px 2px 10px $colorPrimarioSombra,
-                  inset -1px -1px 5px $colorSecundarioSombra;
-    }
-  
-    .form_front {
-        background-color: #6d0000d5;
-    }
-  
-    .form_back {
-      transform: rotateY(-180deg);
-    }
-  
-    .form_details {
-      font-family: $letraTitulos;
-      font-size: 25px;
-      font-weight: 600;
-      padding-bottom: 10px;
-      color: rgb(236, 27, 27);
-    }
-  
-    .switch {
-      font-size: 13px;
-      color: rgb(236, 27, 27);
-  
-      .signup_tog {
-        font-weight: 700;
-        cursor: pointer;
-        text-decoration: underline;
+      transform-style: preserve-3d;
+      transition: all 1s ease;
+    
+      .form_front, .form_back {
+        background-color: $colorFondoForm;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        backface-visibility: hidden;
+        padding: 65px 45px;
+        border-radius: 15px;
+        box-shadow: inset 2px 2px 10px $colorPrimarioSombra,
+                    inset -1px -1px 5px $colorSecundarioSombra;
+      }
+    
+      .form_front {
+          background-color: $colorFondoForm;
+      }
+    
+      .form_back {
+        transform: rotateY(-180deg);
+      }
+    
+      .form_details {
+        font-family: $letraTitulos;
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        color: $colorLetraDetalles;
+      }
+    
+      .switch {
+        font-size: 13px;
+        color: $colorLetraDetalles;
+    
+        .signup_tog {
+          font-weight: 600;
+          cursor: pointer;
+          text-decoration: underline;
+          font-family: $letraTitulos;
+        }
       }
     }
   }
+
+
   
   .input {
     width: 245px;
@@ -89,14 +97,15 @@ $letraTitulos: "Prompt", sans-serif;
     outline: none;
     transition: 0.35s;
     padding: 0px 7px;
-    background-color: rgba(126, 2, 2, 0.6);
+    background-color: rgba(82, 72, 72, 0.6);
     border-radius: 6px;
-    border: 2px solid rgba(163, 14, 14, 0.6);
+    border: 2px solid rgba(95, 95, 95, 0.6);
     box-shadow: 6px 6px 10px $colorPrimarioSombra,
                 1px 1px 10px $colorSecundarioSombra;
   
     &::placeholder {
-      color: #ffffff67;
+      font-family: $letraTitulos;
+      color: #cfcfcfc4;
     }
   
     &:focus {
@@ -116,12 +125,13 @@ $letraTitulos: "Prompt", sans-serif;
   .btn {
     padding: 10px 35px;
     cursor: pointer;
-    background-color: rgb(99, 0, 0);
+    background-color: rgba(126, 118, 118, 0.6);
     border-radius: 6px;
-    border: 2px solid #530000;
+    border: 2px solid rgba(214, 213, 213, 0.6);
     box-shadow: 6px 6px 10px $colorPrimarioSombra,
                 1px 1px 10px $colorSecundarioSombra;
-    color: rgb(236, 27, 27);
+    color: rgb(199, 197, 197);
+    font-family: $letraTitulos;
     font-size: 15px;
     font-weight: bold;
     transition: 0.35s;
