@@ -5,17 +5,12 @@ $colorLetraDetalles: rgb(223, 222, 222);
 $fondoRegistro: url(../assets/img/fondo-login.png);
 $letraTitulos: "Prompt", sans-serif;
 
-
 *{
   margin: 0;
   box-sizing: border-box;
 }
 #body-form{
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-image: $fondoRegistro;
     background-position: center;
     background-size: cover;
@@ -23,12 +18,16 @@ $letraTitulos: "Prompt", sans-serif;
 
 @import "menuAlternativo";
 
+section{
+  height: 400px;
+}
 
 .container-form {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    margin-top: 300px;
+    
     #signup_toggle {
       display: none;
   
@@ -42,8 +41,10 @@ $letraTitulos: "Prompt", sans-serif;
       align-items: center;
       transform-style: preserve-3d;
       transition: all 1s ease;
-    
+      
       .form_front, .form_back {
+        margin-top: 200px;
+        margin-bottom: 100px;
         background-color: $colorFondoForm;
         display: flex;
         flex-direction: column;
@@ -60,10 +61,14 @@ $letraTitulos: "Prompt", sans-serif;
     
       .form_front {
           background-color: $colorFondoForm;
+          height: 380px;
+          
       }
     
       .form_back {
         transform: rotateY(-180deg);
+        height: 550px;
+        
       }
     
       .form_details {
@@ -146,12 +151,29 @@ $letraTitulos: "Prompt", sans-serif;
     }
   }
 
+  @import "footerAlternativo";
+
+
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
+    section{
+      height: 700px;
+    }
     .form_front, .form_back{
         width: 290px;
+        
     }
     .form_back{
         height: 520px ;
+    }
+    header{
+      display: flex;
+      flex-direction: column;
+      nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
     }
 }
