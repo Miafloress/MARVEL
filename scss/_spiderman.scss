@@ -10,13 +10,24 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
   }
 
 #body-spiderman{
-    background-color: #121212;
+    background-image: url(../assets/img/body-spiderman.png);
+    object-fit: cover;
+    object-position: center;
+    animation: scroll-bg 15s linear infinite;
 }  
+@keyframes scroll-bg {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -500px 0;
+    }
+  }
 
 @import "menuAlternativo";
 
 .header-spiderman{
-    background-color: $colorPrincipalSpiderman ;
+    background-color: $colorPrincipalSpiderman !important ;
     .submenu__alternativo{
         background-color: $colorPrincipalSpiderman !important;
     }
@@ -30,6 +41,7 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
     align-items: center;
     justify-content: center;
     margin-bottom: 4%;
+    animation: slideInLeft 1.5s ease-out forwards;
     .banner-spiderman{
         width: 90%;
         height: 400px;
@@ -40,9 +52,23 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
             object-fit: fill;
             width: 100%;
             height: 100%;
+            
         }
     }
 }
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 .intro-spiderman{
     width: 100%;
     height: 400px;
@@ -52,22 +78,11 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
     align-items:center;
     justify-content: space-between;
     transform: translateX(-100%);
-    animation: slideIn 1.5s ease-out forwards;
-    @keyframes slideIn {
-        0% {
-          transform: translateX(-100%);
-          opacity: 0;
-        }
-        50% {
-          opacity: 0.5;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-    
+    animation: slideInLeft 1.5s ease-out forwards;
     #intro-spiderman__info{
+        transition: background-color 0.5s ease;
+        padding: 0.5%;
+        border-radius: 7px;
         margin-left: 5%;
         margin-right: 2.5%;
         text-align: justify;
@@ -84,6 +99,9 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+        &:hover{
+            background-color: #141414c7;
         }
         
     }
@@ -125,8 +143,22 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
     text-align: center;
     margin-bottom: 3%;
     font-weight: 400;
-    color: white
+    color: white;
+
+    overflow: hidden;
+    animation: shimmer 2s infinite;
 }
+@keyframes shimmer {
+    0% {
+      text-shadow: 0 0 20px $colorSecundarioSpiderman;
+    }
+    50% {
+      text-shadow: 0 0 30px $colorPrincipalSpiderman;
+    }
+    100% {
+      text-shadow: 0 0 20px $colorSecundarioSpiderman;
+    }
+  }
 
 
 
@@ -141,6 +173,9 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
+    .banner-spiderman{
+        height: 350px !important;
+    }
     #intro-spiderman__info{
         font-size: 16px !important;
     }
@@ -171,6 +206,7 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
+            margin-bottom: 5% !important;
         }
         #intro-spiderman__img{
             width: 80%;

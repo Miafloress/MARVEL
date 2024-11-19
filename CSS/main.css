@@ -9,7 +9,7 @@
   align-items: center;
   z-index: 10;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-  animation: slideIn 1.5s ease-out; }
+  animation: slideInLeft 1.5s ease-out; }
   .header-alternativo .logo-alternativo {
     font-size: 36px;
     font-weight: bold;
@@ -218,6 +218,7 @@
     grid-area: c8; }
 
 .card-comics {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   position: relative;
   width: 55%;
   height: 95%;
@@ -226,6 +227,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   background-color: #272727; }
+  .card-comics:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 10px 20px #580000;
+    /* Brillo como de poder */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; }
   .card-comics .card-comics__img {
     width: 100%;
     z-index: 2;
@@ -415,6 +421,8 @@
   transform: scale(1.2) rotate(5deg); }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  #cont-carrusel {
+    margin-bottom: 30% !important; }
   .cont-carrusel__productos {
     max-width: 90% !important; } }
 
@@ -1067,7 +1075,7 @@ body {
   align-items: center;
   z-index: 10;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-  animation: slideIn 1.5s ease-out; }
+  animation: slideInLeft 1.5s ease-out; }
   .header-alternativo .logo-alternativo {
     font-size: 36px;
     font-weight: bold;
@@ -1339,7 +1347,16 @@ section {
   box-sizing: border-box; }
 
 #body-spiderman {
-  background-color: #121212; }
+  background-image: url(../assets/img/body-spiderman.png);
+  object-fit: cover;
+  object-position: center;
+  animation: scroll-bg 15s linear infinite; }
+
+@keyframes scroll-bg {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -500px 0; } }
 
 .header-alternativo {
   top: 0;
@@ -1352,7 +1369,7 @@ section {
   align-items: center;
   z-index: 10;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-  animation: slideIn 1.5s ease-out; }
+  animation: slideInLeft 1.5s ease-out; }
   .header-alternativo .logo-alternativo {
     font-size: 36px;
     font-weight: bold;
@@ -1423,7 +1440,7 @@ section {
     font-size: 18px; } }
 
 .header-spiderman {
-  background-color: #580000; }
+  background-color: #580000 !important; }
   .header-spiderman .submenu__alternativo {
     background-color: #580000 !important; }
 
@@ -1434,7 +1451,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4%; }
+  margin-bottom: 4%;
+  animation: slideInLeft 1.5s ease-out forwards; }
   .cont-banner__spiderman .banner-spiderman {
     width: 90%;
     height: 400px;
@@ -1446,6 +1464,16 @@ section {
       width: 100%;
       height: 100%; }
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 .intro-spiderman {
   width: 100%;
   height: 400px;
@@ -1455,18 +1483,11 @@ section {
   align-items: center;
   justify-content: space-between;
   transform: translateX(-100%);
-  animation: slideIn 1.5s ease-out forwards; }
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
+  animation: slideInLeft 1.5s ease-out forwards; }
   .intro-spiderman #intro-spiderman__info {
+    transition: background-color 0.5s ease;
+    padding: 0.5%;
+    border-radius: 7px;
     margin-left: 5%;
     margin-right: 2.5%;
     text-align: justify;
@@ -1483,6 +1504,8 @@ section {
   to {
     opacity: 1;
     transform: translateY(0); } }
+    .intro-spiderman #intro-spiderman__info:hover {
+      background-color: #141414c7; }
   .intro-spiderman #intro-spiderman__img {
     margin-right: 5%;
     margin-left: 2.5%;
@@ -1514,7 +1537,17 @@ section {
   text-align: center;
   margin-bottom: 3%;
   font-weight: 400;
-  color: white; }
+  color: white;
+  overflow: hidden;
+  animation: shimmer 2s infinite; }
+
+@keyframes shimmer {
+  0% {
+    text-shadow: 0 0 20px #000057; }
+  50% {
+    text-shadow: 0 0 30px #580000; }
+  100% {
+    text-shadow: 0 0 20px #000057; } }
 
 .grid-comics {
   margin-bottom: 10%;
@@ -1543,6 +1576,7 @@ section {
     grid-area: c8; }
 
 .card-comics {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   position: relative;
   width: 55%;
   height: 95%;
@@ -1551,6 +1585,11 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   background-color: #272727; }
+  .card-comics:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 10px 20px #580000;
+    /* Brillo como de poder */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; }
   .card-comics .card-comics__img {
     width: 100%;
     z-index: 2;
@@ -1740,6 +1779,8 @@ section {
   transform: scale(1.2) rotate(5deg); }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  #cont-carrusel {
+    margin-bottom: 30% !important; }
   .cont-carrusel__productos {
     max-width: 90% !important; } }
 
@@ -1839,6 +1880,8 @@ section {
   background-color: #580000 !important; }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner-spiderman {
+    height: 350px !important; }
   #intro-spiderman__info {
     font-size: 16px !important; }
   #intro-spiderman__img img {
@@ -1862,7 +1905,8 @@ section {
       font-size: 14px !important;
       width: 80%;
       margin-left: 10%;
-      margin-right: 10%; }
+      margin-right: 10%;
+      margin-bottom: 5% !important; }
     .intro-spiderman #intro-spiderman__img {
       width: 80%;
       margin-left: 10%;
