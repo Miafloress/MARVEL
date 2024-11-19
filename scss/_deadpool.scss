@@ -98,6 +98,12 @@ $colorRojoDeadpool: rgb(68, 2, 2);
     }
 }
 
+.card-comics__line {
+    &:hover  {
+        background-color: $colorRojoDeadpool !important;
+    }
+}
+
 .cont-comics{
     margin-left: 10%;
     margin-right: 10%;
