@@ -79,6 +79,9 @@
   #responsive li a {
     font-size: 18px; } }
 
+#body-deadpool {
+  background-color: #121212 !important; }
+
 .header-deadpool {
   background-color: #440202 !important; }
   .header-deadpool .submenu__alternativo {
@@ -149,7 +152,7 @@
     .intro-deadpool #intro-deadpool__img img {
       width: 100%;
       height: 100%;
-      border: 5px solid black;
+      border: 5px solid #121212;
       outline: 3px solid #440202;
       outline-offset: 5px;
       transition: transform 0.5s ease; }
@@ -175,6 +178,18 @@
     margin-bottom: 3.5%;
     font-weight: 400;
     color: white; }
+
+.buy-btn:hover {
+  background-color: black !important; }
+
+.cont-carrusel__productos {
+  background-color: #440202 !important; }
+
+.carousel-item {
+  background-color: #171717 !important; }
+
+#pie-footer__deadpool {
+  background-color: #440202 !important; }
 
 .grid-comics {
   margin-bottom: 10%;
@@ -306,6 +321,103 @@
     .card-comics:hover {
       background-color: #580000; } }
 
+#cont-carrusel {
+  width: 100%;
+  height: auto;
+  margin-bottom: 9%; }
+
+.carouselContainer {
+  border-radius: 15px;
+  max-width: 50%;
+  margin: 0 auto; }
+
+.carousel-item {
+  text-align: center;
+  background-color: #580000;
+  color: white;
+  padding: 20px 0; }
+
+.contImgProd {
+  max-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; }
+
+.carousel-item img {
+  max-height: 100px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+  transition: transform 0.5s ease-in-out; }
+
+.carousel-item img:hover {
+  transform: scale(1.1); }
+
+.carousel-item h2,
+.carousel-item p,
+.carousel-item .price {
+  color: white;
+  margin: 0; }
+
+.price {
+  font-weight: 500; }
+
+.carousel-item h2 {
+  margin-top: 10px; }
+
+.buy-btn {
+  background-color: #5f1515;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.buy-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  transform: skewX(-30deg);
+  transition: left 0.5s ease;
+  z-index: -1; }
+
+.buy-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); }
+
+.buy-btn:hover::before {
+  left: 100%; }
+
+.buy-btn:hover {
+  background-color: #420b0b; }
+
+.cont-carrusel__productos {
+  max-width: 60%;
+  margin: 40px auto;
+  padding: 10px;
+  background-color: #000057;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+
+.carousel-item img:hover {
+  transform: scale(1.2) rotate(5deg); }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .cont-carrusel__productos {
+    max-width: 90% !important; } }
+
 .pie-footer__alternativo {
   height: auto;
   background-color: #464646f1 !important;
@@ -397,6 +509,43 @@
       font-size: 19px !important; }
       #menu-pie__alternativo .info-pie__alternativo .subinfo-pie__alternativo {
         font-size: 15px !important; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #intro-deadpool__info {
+    font-size: 16px !important; }
+  #intro-deadpool__img img {
+    object-fit: cover; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .banner-deadpool {
+    margin-top: 3.5%;
+    margin-bottom: 3%;
+    width: 93% !important;
+    height: 200px !important;
+    border-radius: 15px; }
+    .banner-deadpool img {
+      border-radius: 15px;
+      object-fit: contain;
+      object-fit: fill;
+      width: 100%;
+      height: 100%; }
+  .intro-deadpool {
+    flex-direction: column;
+    margin-bottom: 60%; }
+    .intro-deadpool #intro-deadpool__info {
+      font-size: 14px !important;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%; }
+    .intro-deadpool #intro-deadpool__img {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 3%; }
+      .intro-deadpool #intro-deadpool__img #intro-deadpool__img img {
+        object-fit: cover; }
+  .cont-comics h2 {
+    margin-bottom: 10%; } }
 
 * {
   margin: 0;
@@ -1188,10 +1337,6 @@ section {
 * {
   margin: 0;
   box-sizing: border-box; }
-
-#row {
-  margin: 0;
-  padding: 0; }
 
 #body-spiderman {
   background-color: #121212; }
