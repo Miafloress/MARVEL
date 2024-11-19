@@ -1,18 +1,28 @@
 $letraTexto: "Cormorant", serif;
 $letraTitulo: "Audiowide", sans-serif;
+$colorPrincipalSpiderman: rgb(88, 0, 0);
+$colorSecundarioSpiderman: rgb(0, 0, 87);
 
 *{
     margin: 0;
     box-sizing: border-box;
     
   }
+#row{
+    margin: 0;
+    padding: 0;
+}
+
+#body-spiderman{
+    background-color: #121212;
+}  
 
 @import "menuAlternativo";
 
 .header-spiderman{
-    background-color: darkred ;
+    background-color: $colorPrincipalSpiderman ;
     .submenu__alternativo{
-        background-color: darkred !important;
+        background-color: $colorPrincipalSpiderman !important;
     }
 }
 
@@ -27,7 +37,6 @@ $letraTitulo: "Audiowide", sans-serif;
     .banner-spiderman{
         width: 90%;
         height: 400px;
-        background-color: darkred;
         border-radius: 15px;
         img{
             border-radius: 15px;
@@ -90,8 +99,8 @@ $letraTitulo: "Audiowide", sans-serif;
         img{
             width: 100%;
             height: 100%;
-            border: 5px solid rgb(92, 1, 1);
-            outline: 3px solid rgb(1, 1, 78);
+            border: 5px solid $colorPrincipalSpiderman;
+            outline: 3px solid $colorSecundarioSpiderman;
             outline-offset: 5px;
             transition: transform 0.5s ease;
             
@@ -112,33 +121,68 @@ $letraTitulo: "Audiowide", sans-serif;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    h2{
-        font-size: 30px;
-        font-family: $letraTitulo;
-        text-align: center;
-        margin-bottom: 3.5%;
-        font-weight: 400;
-        color: white
-    }
 }
+
+.titulos{
+    font-size: 30px;
+    font-family: $letraTitulo;
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: 400;
+    color: white
+}
+
 
 
 @import "comic-card";
 
+@import "carruselProductos";
+
+@import "footerAlternativo";
+
+#pie-footer__spiderman{
+    background-color: $colorPrincipalSpiderman !important
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #intro-spiderman__info{
+        font-size: 16px !important;
+    }
+    #intro-spiderman__img img{
+        object-fit: cover;
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import "footerAlternativo"
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .banner-spiderman{
+        width: 93% !important;
+        height: 200px !important;
+        border-radius: 15px;
+        img{
+            border-radius: 15px;
+            object-fit: contain;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .intro-spiderman{
+        flex-direction: column;
+        margin-bottom: 70%;
+        #intro-spiderman__info{
+            font-size: 14px !important;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        #intro-spiderman__img{
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            #intro-spiderman__img img{
+                object-fit: cover;
+            }
+        }
+    }
+}
