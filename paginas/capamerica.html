@@ -4,62 +4,268 @@
     <link rel="stylesheet" href="../CSS/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icons/capamerica-favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Capitan America</title>
+    <title>MARVEL-Capitan-America</title>
+
 </head>
-<body>
-    <header class="header fixed-top">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-4">
-                    <div class="logo">
-                        <span class="marvel">MARVEL</span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-8">
-                    <nav class="menu text-md-end">
-                        <ul class="nav justify-content-center justify-content-md-end">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="paginas/log-in.html">Registro</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+<body id="body-capamerica">
+    <header class="header-alternativo header-capamerica" id="responsive">
+        <div class="logo-alternativo">
+            <span class="marvel-alternativo">MARVEL</span>
         </div>
+        <nav class="menu-alternativo" >
+            <ul>
+                <li class="nav-item__alternativo">
+                    <a class="nav-link__alternativo" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item__alternativo">
+                    <a class="nav-link__alternativo" href="#">Personajes</a>
+
+                    <ul class="submenu__alternativo">
+                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="">Black Panther</a></li>
+                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="">Black Widow</a></li>
+                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="../paginas/capamerica.html">Capitan America</a></li>
+                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="../paginas/deadpool.html">Deadpool</a></li>
+                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="">Iron Man</a></li>
+                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="../paginas/scarletwitch.html">Scarlet Witch</a></li>
+                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="../paginas/spiderman.html">Spiderman</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item__alternativo">
+                    <a class="nav-link__alternativo" href="">Colaboraciones</a>
+                </li>
+                <li class="nav-item__alternativo">
+                    <a class="nav-link__alternativo" href="../paginas/log-in.html">Registro</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
+    <main>
+        <section class="cont-banner__capamerica">
+            <article class="banner-capamerica">
+                <img src="../assets/img/capamerica-banner.png" alt="Banner Capitan America">
+            </article>
 
+        </section>
+        <section class="intro-capamerica">
+            <article id="intro-capamerica__info">
+                <p>El Capitán América, cuyo nombre real es Steve Rogers, es un personaje icónico de Marvel Comics. Fue creado por Joe Simon y Jack Kirby, debutando en "Captain America Comics #1" (1941). Steve Rogers era un joven débil pero valiente, que se ofreció como voluntario para un experimento militar durante la Segunda Guerra Mundial. Gracias al Suero del Súper Soldado, adquirió fuerza, velocidad y resistencia sobrehumanas. <br>Empuña un escudo indestructible de vibranio, que usa tanto como arma como símbolo de defensa. Luchó con villano Red Skull, antes de quedar congelado en hielo tras un accidente. Décadas después, fue rescatado y revivido, uniéndose a los Vengadores para proteger al mundo.</p>
+            </article>
+            <article id="intro-capamerica__img">
+                <img src="../assets/img/capamerica-intro.jpg" alt="Capitan America Intro">
+            </article>
+        </section>
+    </main>
+    <section class="cont-comics">
+        <h2 >CÓMICS EN LOS QUE APARECE</h2>
+        <section class="grid-comics">
+            <article id="comic_1">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool comic 1.jpg" alt="C1">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">El mejor del mundo Vol.7</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_2">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-2.png" alt="C2">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">La Guerra De Los Mundos</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_3">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-3.png" alt="C3">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">Arte Del Mercenario Bocazas</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_4">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-4.png" alt="C4">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">Deadpool VS Sabretooth</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_5">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool comics 5.jpg" alt="C5">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">Deadpool VS X-force</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_6">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool comics 6.jpg" alt="C6">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">Los Primeros 30 Años</p>
+                      
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_7">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-7.png" alt="C7">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">El mejor del mundo Vol.10</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_8">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-8.png" alt="C8">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">El Fin De Un Error</p>
+                      
+                    </div>
+                </div>
+            </article>
+        </section>    
+    </section>
+
+    <section id="cont-carrusel">
+        <h2 class="titulos">TIENDA ONLINE</h2>
+        <div id="cont-carrusel-productos__capamerica" class="cont-carrusel__productos">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div id="carousel-item__capamerica" class="carousel-item active">
+                <div class="contImgProd">
+                  <img src="../assets/img/deadpool_prod1.png" class="d-block" alt="Funko-POP">
+                </div>
+                <h2>Funko-POP</h2>
+                <p>Figura animada de Deadpool</p>
+                <p class="price">USD$29,99</p>
+                <button id="buy-btn__capamerica" class="buy-btn">Comprar</button>
+              </div>
+      
+              <div id="carousel-item__capamerica"class="carousel-item">
+                <div class="contImgProd">
+                  <img src="../assets/img/deadpool_prod2.png" class="d-block" alt="Taza">
+                </div>
+                <h2>Taza</h2>
+                <p>Vaso ceramica de Deadpool</p>
+                <p class="price">USD$9,99</p>
+                <button id="buy-btn__capamerica" class="buy-btn">Comprar</button>
+              </div>
+      
+              <div id="carousel-item__capamerica" class="carousel-item">
+                <div class="contImgProd">
+                  <img src="../assets/img/deadpool_prod3.png" class="d-block" alt="Gorra">
+                </div>
+                <h2>Gorra</h2>
+                <p>Accesorio de Deadpool</p>
+                <p class="price">USD$8,99</p>
+                <button id="buy-btn__capamerica" class="buy-btn">Comprar</button>
+              </div>
+      
+              <div id="carousel-item__capamerica" class="carousel-item">
+                <div class="contImgProd">
+                  <img src="../assets/img/deadpool_prod4.png" class="d-block" alt="Figura">
+                </div>
+                <h2>Figura</h2>
+                <p>Muñeco de Deadpool</p>
+                <p class="price">USD$39,99</p>
+                <button id="buy-btn__capamerica" class="buy-btn">Comprar</button>
+              </div>
+      
+              <div id="carousel-item__capamerica" class="carousel-item">
+                <div class="contImgProd">
+                  <img src="../assets/img/deadpool_prod5.png" class="d-block" alt="Remera">
+                </div>
+                <h2>Camiseta</h2>
+                <p>Remera de Deadpool</p>
+                <p class="price">USD$14,99</p>
+                <button id="buy-btn__capamerica" class="buy-btn">Comprar</button>
+              </div>
+            </div>
+      
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    <footer class="pie-footer__alternativo" id="pie-footer__capamerica">
+        <div class="cont-redes-menu__alternativo">
+
+            <ul class="icono-redes__alternativo">
+                <li class="elemen-icono__alternativo">
+                    <a href="" class="icono__alternativo">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </a>
+                </li>
+                <li class="elemen-icono__alternativo">
+                    <a href="" class="icono__alternativo">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="elemen-icono__alternativo">
+                    <a href="" class="icono__alternativo">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                </li>
     
-    <footer id="pie">
-        <ul class="icono-redes">
-            <li class="elemen-icono">
-                <a href="" class="icono">
-                    <ion-icon name="logo-tiktok"></ion-icon>
-                </a>
-            </li>
-            <li class="elemen-icono">
-                <a href="" class="icono">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-            <li class="elemen-icono">
-                <a href="" class="icono">
-                    <ion-icon name="logo-youtube"></ion-icon>
-                </a>
-            </li>
-
-        </ul>
-        <ul id="menu-pie">
-            <li class="elem-pie"><a href="index.html" class="info-pie">Inicio</a></li>
-            <li class="elem-pie"><a href="paginas/log-in.html" class="info-pie">Registro</a></li>
-
-        </ul>
-       <p id="copyright">© 2024 Marvel Studios. Todos los derechos reservados.  </p>
+            </ul>
+            <ul id="menu-pie__alternativo">
+                <li class="elem-pie__alternativo"><a href="../index.html" class="info-pie__alternativo">Inicio</a></li>
+                <li class="elem-pie__alternativo">
+                    <a href="#" class="info-pie__alternativo">Personajes</a>
+                    <ul class="submenu-pie__alternativo">
+                        <li class="subelem-pie__alternativo"><a class="subinfo-pie__alternativo" href="#">Black Panther</a></li>
+                        <li class="subelem-pie__alternativo"><a class="subinfo-pie__alternativo" href="#">Black Widow</a></li>
+                        <li class="subelem-pie__alternativo"><a class="subinfo-pie__alternativo" href="../paginas/capamerica.html">Capitán América</a></li>
+                        <li class="subelem-pie__alternativo"><a class="subinfo-pie__alternativo" href="#">Deadpool</a></li>
+                        <li class="subelem-pie__alternativo"><a class="subinfo-pie__alternativo" href="#">Iron Man</a></li>
+                        <li class="subelem-pie__alternativo"><a class="subinfo-pie__alternativo" href="../paginas/scarletwitch.html">Scarlet Witch</a></li>
+                        <li class="subelem-pie__alternativo"><a class="subinfo-pie__alternativo" href="../paginas/spiderman.html">Spiderman</a></li>
+                    </ul>
+                </li>
+                <li class="elem-pie__alternativo"><a href="../paginas/log-in.html" class="info-pie__alternativo">Registro</a></li>
+    
+            </ul>
+        </div>
+       <p id="copyright__alternativo">© 2024 Marvel Studios. Todos los derechos reservados.</p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
