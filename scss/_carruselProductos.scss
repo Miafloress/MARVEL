@@ -1,0 +1,118 @@
+$colorPrincipalSpiderman: rgb(88, 0, 0);
+$colorSecundarioSpiderman: rgb(0, 0, 87);
+
+#cont-carrusel{
+    width: 100%;
+    height: auto;
+    margin-bottom: 9%;
+}
+
+.carouselContainer {
+    border-radius: 15px; 
+    max-width: 50%; 
+    margin: 0 auto; 
+    
+  }
+  
+  .carousel-item {
+    text-align: center;
+    background-color: $colorPrincipalSpiderman;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .contImgProd {
+    max-height: 75px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; 
+  }
+  
+  .carousel-item img {
+    max-height: 100px; 
+    width: auto; 
+    display: block;
+    margin: 0 auto;
+
+    transition: transform 0.3s ease;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item img:hover {
+    transform: scale(1.1); 
+  }
+  
+  .carousel-item h2,
+  .carousel-item p, 
+  .carousel-item .price {
+    color: white;
+    margin: 0; 
+    
+  }
+
+  .price{
+    font-weight: 500;
+  }
+  
+  .carousel-item h2 {
+    margin-top: 10px;
+  }
+  
+  .buy-btn {
+    background-color: rgb(95, 21, 21);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .buy-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.4), rgba(255,255,255,0));
+    transform: skewX(-30deg);
+    transition: left 0.5s ease;
+    z-index: -1;
+  }
+  
+  .buy-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  .buy-btn:hover::before {
+    left: 100%;
+  }
+  
+  .buy-btn:hover {
+    background-color: rgb(66, 11, 11);
+  }
+  
+  .cont-carrusel__productos {
+    max-width: 60%;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: $colorSecundarioSpiderman;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .carousel-item img:hover {
+    transform: scale(1.2) rotate(5deg);
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px){
+    .cont-carrusel__productos{
+        max-width: 90% !important;
+    }
+  }
