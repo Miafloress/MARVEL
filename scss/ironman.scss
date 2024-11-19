@@ -1,112 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "menuAlternativo";
 
-body {
-  font-family: "Bangers", system-ui;
-    background-color: #740009;
-    color: #333;
-    background: radial-gradient(circle, #550007, #740009, #330003);
-    animation: heroGlow 5s infinite alternate;
-}
-@keyframes heroGlow {
-  0% {
-      filter: brightness(1);
-  }
-  100% {
-      filter: brightness(1.2);
-  }
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(70, 7, 7);
-    border-bottom: 1px solid #ddd;
-    animation: slideInFromTop 1s ease-out;
-  }
-@keyframes slideInFromTop {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-  
-.contLogo{
-    width: 30px;
-}
-.logo {
-    background-size: contain; 
-    background-repeat: no-repeat;
-  }
-  
-  .header .nav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .header .nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px;
-    position: relative;
-  }
-  
-  .header .nav a:hover {
-    color: rgb(187, 9, 9);
-  }
-  
-  .header .nav .rebajas {
-    color: rgb(187, 9, 9);
-  }
-  
-  .header .nav .dropdown {
-    position: relative;
-  }
-  
-  .header .nav .dropdown .dropdown-toggle {
-    cursor: pointer;
-  }
-  
-  .header .nav .dropdown .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgb(70, 7, 7);
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    width: 150px;
-  }
-  
-  .header .nav .dropdown .dropdown-menu a {
-    display: block;
-    padding: 8px 10px;
-    color: white;
-    font-weight: normal;
-  }
-  
-  .header .nav .dropdown .dropdown-menu a:hover {
-    background-color: #a74d4d;
-  }
-  
-  .header .nav .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-
-
-  .main-image {
+.main-image {
     display: flex;
     align-items: center; 
     justify-content: center; 
@@ -332,3 +226,5 @@ body {
 .carousel-item img:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+@import "footerAlternativo";

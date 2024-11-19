@@ -2,7 +2,7 @@
 
 $letraTexto: "Cormorant", serif;
 $letraTitulo: "Audiowide", sans-serif;
-$colorRojoDeadpool: rgb(68, 2, 2);
+$colorRojoDeadpool: rgb(57, 1, 1);
 $colorNegroDeadpool:#121212;
 
 #body-deadpool{
@@ -90,7 +90,7 @@ $colorNegroDeadpool:#121212;
         img{
             width: 100%;
             height: 100%;
-            border: 5px solid $colorNegroDeadpool;
+            border: 5px solid black;
             outline: 3px solid $colorRojoDeadpool;
             outline-offset: 5px;
             transition: transform 0.5s ease;
@@ -103,7 +103,8 @@ $colorNegroDeadpool:#121212;
     }
 }
 
-.card-comics__line {
+#card-comics-line__deadpool {
+    background-color: $colorRojoDeadpool !important;
     &:hover  {
         background-color: $colorRojoDeadpool !important;
     }
@@ -129,16 +130,18 @@ $colorNegroDeadpool:#121212;
     }
 }
 
-.buy-btn:hover{
-    background-color: black !important;
+#buy-btn__deadpool{
+    &:hover{
+    background-color: black;
+    }
 } 
 
-.cont-carrusel__productos{
-    background-color: $colorRojoDeadpool !important;
+#cont-carrusel-productos__deadpool{
+    background-color: $colorRojoDeadpool;
 }
 
-.carousel-item{
-    background-color: rgb(23, 23, 23) !important;
+#carousel-item__deadpool{
+    background-color: rgb(23, 23, 23);
 }
 
 #pie-footer__deadpool{
@@ -156,6 +159,9 @@ $colorNegroDeadpool:#121212;
     }
     #intro-deadpool__img img{
         object-fit: cover;
+    }
+    .cont-comics{
+        margin-bottom: 10%;
     }
 }
 
