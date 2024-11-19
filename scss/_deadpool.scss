@@ -2,7 +2,7 @@
 
 $letraTexto: "Cormorant", serif;
 $letraTitulo: "Audiowide", sans-serif;
-$colorRojoDeadpool: rgb(68, 2, 2);
+$colorRojoDeadpool: rgb(57, 1, 1);
 $colorNegroDeadpool:#121212;
 
 #body-deadpool{
@@ -103,7 +103,8 @@ $colorNegroDeadpool:#121212;
     }
 }
 
-.card-comics__line {
+#card-comics-line__deadpool {
+    background-color: $colorRojoDeadpool !important;
     &:hover  {
         background-color: $colorRojoDeadpool !important;
     }
@@ -158,6 +159,9 @@ $colorNegroDeadpool:#121212;
     }
     #intro-deadpool__img img{
         object-fit: cover;
+    }
+    .cont-comics{
+        margin-bottom: 10%;
     }
 }
 

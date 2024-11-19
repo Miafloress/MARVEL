@@ -103,7 +103,7 @@ $colorAzulCapAmerica:#1214b1;
     }
 }
 
-.card-comics__line {
+#card-comics-line__capamerica {
     background-color: $colorAzulCapAmerica !important;
     &:hover  {
         background-color: $colorRojoCapAmerica !important;
@@ -145,7 +145,7 @@ $colorAzulCapAmerica:#1214b1;
 }
 
 #pie-footer__capamerica{
-    background-color: $colorRojoCapAmerica !important;
+    background-color: $colorAzulCapAmerica !important;
 }
 @import "comic-card";
 
@@ -159,6 +159,9 @@ $colorAzulCapAmerica:#1214b1;
     }
     #intro-capamerica__img img{
         object-fit: cover;
+    }
+    .cont-comics{
+        margin-bottom: 10%;
     }
 }
 
@@ -180,7 +183,7 @@ $colorAzulCapAmerica:#1214b1;
     }
     .intro-capamerica{
         flex-direction: column;
-        margin-bottom: 60%;
+        margin-bottom: 82%;
         #intro-capamerica__info{
             font-size: 14px !important;
             width: 80%;
