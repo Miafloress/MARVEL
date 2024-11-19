@@ -4,12 +4,18 @@
     <link rel="stylesheet" href="../CSS/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="icon" href="../assets/icons/deadpool-favicon.png">
-    <title>Deadpool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <title>MARVEL-Deadpool</title>
+
 </head>
 <body>
-    <header class="header-alternativo" id="responsive">
+    <header class="header-alternativo header-deadpool" id="responsive">
         <div class="logo-alternativo">
             <span class="marvel-alternativo">MARVEL</span>
         </div>
@@ -27,8 +33,8 @@
                         <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="../paginas/capamerica.html">Capitan America</a></li>
                         <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="../paginas/deadpool.html">Deadpool</a></li>
                         <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="">Iron Man</a></li>
-                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="">Scarlet Witch</a></li>
-                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="">Spiderman</a></li>
+                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="../paginas/scarletwitch.html">Scarlet Witch</a></li>
+                        <li class="nav-item__subAlternativo"><a class="nav-link__subAlternativo" href="../paginas/spiderman.html">Spiderman</a></li>
                     </ul>
                 </li>
                 <li class="nav-item__alternativo">
@@ -41,24 +47,115 @@
         </nav>
     </header>
 
-    <div class="banner container">
-        <img id="bannerdeadpool" src="../assets/img/deadpool-banner.jpg" alt="Banner Deadpool">
-    </div>
-
-    <main id="main-deadpool">
-        <section id="cont-main" class="container-fluid col-lg-12 col-sm">
-            <article id="cont-texto" class="col-lg-7 col-md-7 col-sm-7">
-                <p>Presentamos al antihéroe más desquiciado, sarcástico e irreverente del mundo de los cómics: Deadpool. También conocido como el "Mercenario Bocazas," Deadpool es el tipo de "héroe" que nunca se toma nada en serio… excepto, tal vez, su sentido del humor. Equipado con habilidades de regeneración casi inmortales, un arsenal que haría sonrojar al más rudo de los soldados, y una predisposición a romper la cuarta pared, Deadpool no es tu típico justiciero de mallas ajustadas.
-
-                    Es famoso no solo por su talento en combate, sino por sus chistes oscuros, su sarcasmo y su capacidad de hacer reír incluso en medio de la mayor carnicería. En su mundo, no hay líneas claras entre héroes y villanos; para él, todo es un campo de juego donde puede burlarse, ser brutal, y todavía tener tiempo para hacer una referencia a la cultura pop. No esperes discursos profundos ni grandes lecciones de vida: Deadpool llega para recordarnos que, a veces, salvar el día puede ser tan divertido como un buen chiste... y unas cuantas explosiones.</p>
+    <main>
+        <section class="cont-banner__deadpool">
+            <article class="banner-deadpool">
+                <img src="../assets/img/banner-deadpool.jpg" alt="Banner Deadpool">
             </article>
-            <article class="col-lg-5 col-md-5 col-sm-5">
-                <img src="" alt="">
+
+        </section>
+        <section class="intro-deadpool">
+            <article id="intro-deadpool__info">
+                <p>Deadpool, cuyo nombre real es Wade Wilson, es un antihéroe del universo de Marvel conocido por su personalidad irreverente y su tendencia a romper la cuarta pared, interactuando directamente con el público. Es un exmercenario que adquiere habilidades de regeneración acelerada tras someterse a un experimento fallido para curar su cáncer. <br> Caracterizado por su humor negro, sarcasmo y un traje rojo y negro, Deadpool es un experto en combate cuerpo a cuerpo y armas, pero también tiene una personalidad caótica y un sentido moral flexible. A menudo combina violencia extrema con comentarios absurdos, lo que lo convierte en un personaje único y muy querido por los fanáticos.</p>
+            </article>
+            <article id="intro-deadpool__img">
+                <img src="../assets/img/intro-deadpool.png" alt="Deadpool Intro">
             </article>
         </section>
     </main>
+    <section class="cont-comics">
+        <h2 >CÓMICS EN LOS QUE APARECE</h2>
+        <section class="grid-comics">
+            <article id="comic_1">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool comic 1.jpg" alt="C1">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">El mejor del mundo Vol.7</p>
 
-    <footer id="pie-footer__alternativo">
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_2">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-2.png" alt="C2">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">La Guerra De Los Mundos</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_3">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-3.png" alt="C3">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">El Arte Del Mercenario Bocazas</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_4">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-4.png" alt="C4">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">Deadpool VS Sabretooth</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_5">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool comics 5.jpg" alt="C5">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">Deadpool VS X-force</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_6">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool comics 6.jpg" alt="C6">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">Los Primeros 30 Años</p>
+                      
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_7">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-7.png" alt="C7">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">El mejor del mundo Vol.10</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <article id="comic_8">
+                <div class="card-comics">
+                    <img class="card-comics__img" src="../assets/img/deadpool-comics-8.png" alt="C8">
+                    <div class="card-comics__line"></div>
+                    <div class="card-comics__info">
+                      <p class="card-comics__titulo">El Fin De Un Error</p>
+                      
+                    </div>
+                </div>
+            </article>
+        </section>
+            
+    </section>
+    <footer class="pie-footer__alternativo" id="pie-footer__deadpool">
         <div class="cont-redes-menu__alternativo">
 
             <ul class="icono-redes__alternativo">
