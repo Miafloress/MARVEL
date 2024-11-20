@@ -80,7 +80,16 @@
     font-size: 18px; } }
 
 #body-deadpool {
-  background-color: #121212 !important; }
+  background-image: url(../assets/img/body-deadpool.png);
+  object-fit: cover;
+  object-position: center;
+  animation: scroll-bg 15s linear infinite; }
+
+@keyframes scroll-bg {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -500px 0; } }
 
 .header-deadpool {
   background-color: #390101 !important; }
@@ -94,7 +103,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4%; }
+  margin-bottom: 4%;
+  animation: slideInLeft 1.5s ease-out forwards; }
   .cont-banner__deadpool .banner-deadpool {
     width: 90%;
     height: 400px;
@@ -107,6 +117,16 @@
       width: 100%;
       height: 100%; }
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 .intro-deadpool {
   width: 100%;
   height: 400px;
@@ -116,18 +136,11 @@
   align-items: center;
   justify-content: space-between;
   transform: translateX(-100%);
-  animation: slideIn 1.5s ease-out forwards; }
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
+  animation: slideInLeft 1.5s ease-out forwards; }
   .intro-deadpool #intro-deadpool__info {
+    transition: background-color 0.5s ease;
+    border-radius: 7px;
+    padding: 0.5%;
     margin-left: 5%;
     margin-right: 2.5%;
     text-align: justify;
@@ -144,6 +157,8 @@
   to {
     opacity: 1;
     transform: translateY(0); } }
+    .intro-deadpool #intro-deadpool__info:hover {
+      background-color: #141414c7; }
   .intro-deadpool #intro-deadpool__img {
     margin-right: 5%;
     margin-left: 2.5%;
@@ -180,6 +195,24 @@
     margin-bottom: 3.5%;
     font-weight: 400;
     color: white; }
+
+.titulos {
+  font-size: 30px;
+  font-family: "Audiowide", sans-serif;
+  text-align: center;
+  margin-bottom: 3%;
+  font-weight: 400;
+  color: white;
+  overflow: hidden;
+  animation: shimmer 2s infinite; }
+
+@keyframes shimmer {
+  0% {
+    text-shadow: 0 0 20px #121212; }
+  50% {
+    text-shadow: 0 0 30px #390101; }
+  100% {
+    text-shadow: 0 0 20px #121212; } }
 
 #buy-btn__deadpool:hover {
   background-color: black; }
@@ -232,7 +265,6 @@
   .card-comics:hover {
     transform: scale(1.1) rotate(2deg);
     box-shadow: 0 10px 20px #580000;
-    /* Brillo como de poder */
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; }
   .card-comics .card-comics__img {
     width: 100%;
@@ -641,7 +673,16 @@
     font-size: 18px; } }
 
 #body-capamerica {
-  background-color: #121212 !important; }
+  background-image: url(../assets/img/body-capamerica.jpg);
+  object-fit: cover;
+  object-position: center;
+  animation: scroll-bg 15s linear infinite; }
+
+@keyframes scroll-bg {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -500px 0; } }
 
 .header-capamerica {
   background-color: #1214b1 !important; }
@@ -655,7 +696,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4%; }
+  margin-bottom: 4%;
+  animation: slideInLeft 1.5s ease-out forwards; }
   .cont-banner__capamerica .banner-capamerica {
     width: 90%;
     height: 400px;
@@ -668,6 +710,16 @@
       width: 100%;
       height: 100%; }
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 .intro-capamerica {
   width: 100%;
   height: 400px;
@@ -677,18 +729,11 @@
   align-items: center;
   justify-content: space-between;
   transform: translateX(-100%);
-  animation: slideIn 1.5s ease-out forwards; }
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
+  animation: slideInLeft 1.5s ease-out forwards; }
   .intro-capamerica #intro-capamerica__info {
+    transition: background-color 0.5s ease;
+    border-radius: 7px;
+    padding: 0.5%;
     margin-left: 5%;
     margin-right: 2.5%;
     text-align: justify;
@@ -705,6 +750,8 @@
   to {
     opacity: 1;
     transform: translateY(0); } }
+    .intro-capamerica #intro-capamerica__info:hover {
+      background-color: #141414c7; }
   .intro-capamerica #intro-capamerica__img {
     margin-right: 5%;
     margin-left: 2.5%;
@@ -713,16 +760,19 @@
     .intro-capamerica #intro-capamerica__img img {
       width: 100%;
       height: 100%;
-      border: 5px solid #950404;
+      border: 5px solid white;
       outline: 3px solid #1214b1;
       outline-offset: 5px;
       transition: transform 0.5s ease; }
       .intro-capamerica #intro-capamerica__img img:hover {
         transform: scale(1.1) rotate(-2deg); }
 
-#card-comics-line__capamerica {
+#card-comics__capamerica:hover {
+  box-shadow: 0 10px 20px white !important; }
+
+#card-comics__capamerica .card-comics__line {
   background-color: #1214b1 !important; }
-  #card-comics-line__capamerica:hover {
+  #card-comics__capamerica .card-comics__line:hover {
     background-color: #950404 !important; }
 
 .cont-comics {
@@ -741,6 +791,24 @@
     margin-bottom: 3.5%;
     font-weight: 400;
     color: white; }
+
+.titulos {
+  font-size: 30px;
+  font-family: "Audiowide", sans-serif;
+  text-align: center;
+  margin-bottom: 3%;
+  font-weight: 400;
+  color: white;
+  overflow: hidden;
+  animation: shimmer 2s infinite; }
+
+@keyframes shimmer {
+  0% {
+    text-shadow: 0 0 20px #1214b1; }
+  50% {
+    text-shadow: 0 0 30px #950404; }
+  100% {
+    text-shadow: 0 0 20px #1214b1; } }
 
 #buy-btn__capamerica:hover {
   background-color: #950404; }
@@ -793,7 +861,10 @@
   .card-comics:hover {
     transform: scale(1.1) rotate(2deg);
     box-shadow: 0 10px 20px #580000;
+<<<<<<< HEAD
     /* Brillo como de poder */
+=======
+>>>>>>> 85b09c9bf954d5d676c9d3aa912bf46df6e32305
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; }
   .card-comics .card-comics__img {
     width: 100%;
@@ -1120,6 +1191,182 @@
   .cont-comics h2 {
     margin-bottom: 10%; } }
 
+<<<<<<< HEAD
+=======
+.header-alternativo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #464646f1;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  animation: slideInLeft 1.5s ease-out; }
+  .header-alternativo .logo-alternativo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px; }
+    .header-alternativo .logo-alternativo .marvel-alternativo {
+      font-size: 48px;
+      color: white;
+      transition: transform 0.3s ease; }
+      .header-alternativo .logo-alternativo .marvel-alternativo:hover {
+        transform: scale(1.2); }
+  .header-alternativo .menu-alternativo ul {
+    list-style: none;
+    display: flex;
+    margin-right: 3%;
+    gap: 5px; }
+    .header-alternativo .menu-alternativo ul .nav-item__alternativo {
+      position: relative; }
+      .header-alternativo .menu-alternativo ul .nav-item__alternativo .nav-link__alternativo {
+        color: rgba(128, 128, 128, 0.634);
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        padding: 10px;
+        transition: color 0.3s ease, transform 0.3s ease; }
+        .header-alternativo .menu-alternativo ul .nav-item__alternativo .nav-link__alternativo:hover {
+          color: white;
+          transform: translateY(-3px); }
+      .header-alternativo .menu-alternativo ul .nav-item__alternativo:hover .submenu__alternativo {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0); }
+      .header-alternativo .menu-alternativo ul .nav-item__alternativo .submenu__alternativo {
+        z-index: 10;
+        margin-top: 10px;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #464646f1;
+        list-style: none;
+        padding: 15px 0;
+        min-width: 150px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; }
+        .header-alternativo .menu-alternativo ul .nav-item__alternativo .submenu__alternativo .nav-item__subAlternativo {
+          padding: 5px 20px;
+          margin-top: 2px;
+          margin-bottom: 2px; }
+          .header-alternativo .menu-alternativo ul .nav-item__alternativo .submenu__alternativo .nav-item__subAlternativo .nav-link__subAlternativo {
+            color: rgba(128, 128, 128, 0.634);
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease; }
+            .header-alternativo .menu-alternativo ul .nav-item__alternativo .submenu__alternativo .nav-item__subAlternativo .nav-link__subAlternativo:hover {
+              color: white; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #responsive nav {
+    margin-left: -20px !important; }
+  #responsive li a {
+    font-size: 13px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #responsive li a {
+    font-size: 18px; } }
+
+.pie-footer__alternativo {
+  height: auto;
+  background-color: #464646f1 !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .pie-footer__alternativo .cont-redes-menu__alternativo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .pie-footer__alternativo .cont-redes-menu__alternativo .icono-redes__alternativo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 20px;
+      flex-wrap: wrap; }
+    .pie-footer__alternativo .cont-redes-menu__alternativo .elemen-icono__alternativo {
+      list-style: none; }
+      .pie-footer__alternativo .cont-redes-menu__alternativo .elemen-icono__alternativo .icono__alternativo {
+        color: gray;
+        font-size: 29px;
+        display: inline-block;
+        margin: 0 20px;
+        transition: color 1s, transform 1s; }
+        .pie-footer__alternativo .cont-redes-menu__alternativo .elemen-icono__alternativo .icono__alternativo:hover {
+          transform: translateY(-10px);
+          color: #ffffff; }
+    .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      margin-left: 33px;
+      margin-top: 1%;
+      margin-bottom: 2%;
+      column-gap: 15%; }
+      .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .info-pie__alternativo {
+          color: grey;
+          font-size: 22px;
+          text-decoration: none;
+          margin-bottom: 5px;
+          transition: color 1s; }
+          .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .info-pie__alternativo:hover {
+            color: #ffffff; }
+        .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .submenu-pie__alternativo {
+          width: 100%;
+          margin-top: 5px;
+          font-size: 16px;
+          color: grey;
+          padding: 0;
+          column-gap: 3%; }
+          .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .submenu-pie__alternativo .subelem-pie__alternativo {
+            list-style: none;
+            margin: 2px 0; }
+            .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .submenu-pie__alternativo .subelem-pie__alternativo .subinfo-pie__alternativo {
+              color: grey;
+              text-decoration: none;
+              font-size: 16px;
+              transition: color 1s; }
+              .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .submenu-pie__alternativo .subelem-pie__alternativo .subinfo-pie__alternativo:hover {
+                color: #ffffff; }
+  .pie-footer__alternativo #copyright__alternativo {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: grey; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #menu-pie__alternativo {
+    margin-left: 15px !important; }
+    #menu-pie__alternativo .info-pie__alternativo {
+      font-size: 19px !important; }
+      #menu-pie__alternativo .info-pie__alternativo .subinfo-pie__alternativo {
+        font-size: 15px !important; } }
+
+>>>>>>> 85b09c9bf954d5d676c9d3aa912bf46df6e32305
 * {
   margin: 0;
   box-sizing: border-box; }
@@ -1654,7 +1901,6 @@ section {
   .card-comics:hover {
     transform: scale(1.1) rotate(2deg);
     box-shadow: 0 10px 20px #580000;
-    /* Brillo como de poder */
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; }
   .card-comics .card-comics__img {
     width: 100%;

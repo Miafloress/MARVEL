@@ -6,8 +6,19 @@ $colorRojoCapAmerica: rgb(149, 4, 4);
 $colorAzulCapAmerica:#1214b1;
 
 #body-capamerica{
-    background-color: #121212 !important;
-}
+    background-image: url(../assets/img/body-capamerica.jpg);
+    object-fit: cover;
+    object-position: center;
+    animation: scroll-bg 15s linear infinite;
+}  
+@keyframes scroll-bg {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -500px 0;
+    }
+  }
 
 .header-capamerica{
     background-color: $colorAzulCapAmerica !important;
@@ -24,6 +35,7 @@ $colorAzulCapAmerica:#1214b1;
     align-items: center;
     justify-content: center;
     margin-bottom: 4%;
+    animation: slideInLeft 1.5s ease-out forwards;
     .banner-capamerica{
         width: 90%;
         height: 400px;
@@ -38,6 +50,19 @@ $colorAzulCapAmerica:#1214b1;
         }
     }
 }
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 .intro-capamerica{
     width: 100%;
     height: 400px;
@@ -47,22 +72,11 @@ $colorAzulCapAmerica:#1214b1;
     align-items:center;
     justify-content: space-between;
     transform: translateX(-100%);
-    animation: slideIn 1.5s ease-out forwards;
-    @keyframes slideIn {
-        0% {
-          transform: translateX(-100%);
-          opacity: 0;
-        }
-        50% {
-          opacity: 0.5;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-    
+    animation: slideInLeft 1.5s ease-out forwards;
     #intro-capamerica__info{
+        transition: background-color 0.5s ease;
+        border-radius: 7px;
+        padding: 0.5%;
         margin-left: 5%;
         margin-right: 2.5%;
         text-align: justify;
@@ -80,6 +94,9 @@ $colorAzulCapAmerica:#1214b1;
                 transform: translateY(0);
             }
         }
+        &:hover{
+            background-color: #141414c7;
+        }
         
     }
     #intro-capamerica__img{
@@ -90,7 +107,7 @@ $colorAzulCapAmerica:#1214b1;
         img{
             width: 100%;
             height: 100%;
-            border: 5px solid $colorRojoCapAmerica;
+            border: 5px solid white;
             outline: 3px solid $colorAzulCapAmerica;
             outline-offset: 5px;
             transition: transform 0.5s ease;
@@ -103,13 +120,17 @@ $colorAzulCapAmerica:#1214b1;
     }
 }
 
-#card-comics-line__capamerica {
-    background-color: $colorAzulCapAmerica !important;
+#card-comics__capamerica{
+    &:hover{
+      box-shadow: 0 10px 20px white !important;
+    }
+    .card-comics__line{
+        background-color: $colorAzulCapAmerica !important;
     &:hover  {
         background-color: $colorRojoCapAmerica !important;
     }
+    }
 }
-
 .cont-comics{
     margin-left: 10%;
     margin-right: 10%;
@@ -129,6 +150,28 @@ $colorAzulCapAmerica:#1214b1;
         color: white
     }
 }
+
+.titulos{
+    font-size: 30px;
+    font-family: $letraTitulo;
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: 400;
+    color: white;
+    overflow: hidden;
+    animation: shimmer 2s infinite;
+}
+@keyframes shimmer {
+    0% {
+      text-shadow: 0 0 20px $colorAzulCapAmerica;
+    }
+    50% {
+      text-shadow: 0 0 30px $colorRojoCapAmerica;
+    }
+    100% {
+      text-shadow: 0 0 20px $colorAzulCapAmerica;
+    }
+  }
 
 #buy-btn__capamerica{
     &:hover{

@@ -6,8 +6,19 @@ $colorRojoDeadpool: rgb(57, 1, 1);
 $colorNegroDeadpool:#121212;
 
 #body-deadpool{
-    background-color: $colorNegroDeadpool !important;
-}
+    background-image: url(../assets/img/body-deadpool.png);
+    object-fit: cover;
+    object-position: center;
+    animation: scroll-bg 15s linear infinite;
+}  
+@keyframes scroll-bg {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -500px 0;
+    }
+  }
 
 .header-deadpool{
     background-color: $colorRojoDeadpool !important;
@@ -24,6 +35,7 @@ $colorNegroDeadpool:#121212;
     align-items: center;
     justify-content: center;
     margin-bottom: 4%;
+    animation: slideInLeft 1.5s ease-out forwards;
     .banner-deadpool{
         width: 90%;
         height: 400px;
@@ -38,6 +50,19 @@ $colorNegroDeadpool:#121212;
         }
     }
 }
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 .intro-deadpool{
     width: 100%;
     height: 400px;
@@ -47,22 +72,11 @@ $colorNegroDeadpool:#121212;
     align-items:center;
     justify-content: space-between;
     transform: translateX(-100%);
-    animation: slideIn 1.5s ease-out forwards;
-    @keyframes slideIn {
-        0% {
-          transform: translateX(-100%);
-          opacity: 0;
-        }
-        50% {
-          opacity: 0.5;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-    
+    animation: slideInLeft 1.5s ease-out forwards;
     #intro-deadpool__info{
+        transition: background-color 0.5s ease;
+        border-radius: 7px;
+        padding: 0.5%;
         margin-left: 5%;
         margin-right: 2.5%;
         text-align: justify;
@@ -79,6 +93,9 @@ $colorNegroDeadpool:#121212;
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+        &:hover{
+            background-color: #141414c7;
         }
         
     }
@@ -129,6 +146,29 @@ $colorNegroDeadpool:#121212;
         color: white
     }
 }
+
+.titulos{
+    font-size: 30px;
+    font-family: $letraTitulo;
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: 400;
+    color: white;
+
+    overflow: hidden;
+    animation: shimmer 2s infinite;
+}
+@keyframes shimmer {
+    0% {
+      text-shadow: 0 0 20px $colorNegroDeadpool;
+    }
+    50% {
+      text-shadow: 0 0 30px $colorRojoDeadpool;
+    }
+    100% {
+      text-shadow: 0 0 20px $colorNegroDeadpool;
+    }
+  }
 
 #buy-btn__deadpool{
     &:hover{
