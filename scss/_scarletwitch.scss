@@ -6,7 +6,195 @@ $colorRojoScarlet: rgb(150, 12, 44);
 @import "carruselProductos";
 @import "footerAlternativo";
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+#body-scarlet{
+    font-family: Arial, sans-serif;
+    background-image: url(../assets/img/body-scarletwitch.png);
+    object-fit: cover;
+    object-position: center;
+    animation: scroll-bg 15s linear infinite;
+}
+
+@keyframes scroll-bg {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -500px 0;
+    }
+}
+
+.header-scarlet{
+    background-color: $colorRosaScarlet;
+    .submenu__alternativo{
+        background-color: $colorRojoScarlet;
+    }
+}
+
+.cont-banner__scarlet{
+    margin-top: 1.5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    animation: slideInLeft 1.5s ease-out forwards;
+
+    .banner-scarlet{
+        width: 90%;
+        height: 450px;
+        background-color: $colorRojoScarlet;
+        border-radius: 15px;
+
+        img{
+            border-radius: 15px;
+            object-fit: contain;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
    
-
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
     
+.intro-scarlet{
+    margin-top: 5%;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(-100%);
+    animation: slideInLeft 1.5s ease-out forwards;
+    #intro-scarlet__info{
+        transition: background-color 0.5 ease;
+        padding: 0.5%;
+        border-radius: 7px;
+        margin-left: 5%;
+        margin-right: 2.5%;
+        text-align: justify;
+        width: 50%;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInText 2s ease forwards;
+        @keyframes fadeInText {
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        &:hover{
+            background-color: #141414c7;
+        }
+    }
+    #intro-scarlet__img{
+        margin-right: 5%;
+        margin-left: 2.5%;
+        width: 35%;
+        height: 370px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            border: 5px solid black;
+            outline: 3px solid $colorRosaScarlet;
+            outline-offset: 5px;
+            transition: transform 0.5 ease;
+
+            &:hover{
+                transform: scale(1.1) rotate(-2deg);
+            }
+        }
+    }
+}
+
+#card-comics-line__scarlet{
+    background-color: $colorRosaScarlet;
+
+    &:hover{
+        background-color: $colorRosaScarlet;
+    }
+}
+
+.cont-comics{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 3.5%;
+        font-weight: 400;
+        color: white;
+    }
+}
+
+.titulos{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: 400;
+    color: white;
+    overflow: hidden;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer{
+    0%{
+        text-shadow: 0 0 20px black;
+    }
+    50%{
+        text-shadow: 0 0 30px black;
+    }
+    100%{
+        text-shadow: 0 0 20px black;
+    }
+}
+
+#buy-btn__scarlet{
+    &:hover{
+        background-color: black;
+    }
+}
+
+#cont-carrusel-productos__scarlet{
+    background-color: $colorRosaScarlet;
+}
+
+#carousel-item__scarlet{
+    background-color: black;
+}
+
+#pie-footer__scarlet{
+    background-color: $colorRosaScarlet;
+}
