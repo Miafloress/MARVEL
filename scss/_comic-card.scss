@@ -38,6 +38,12 @@ $colorPrincipalSpiderman: rgb(88, 0, 0);
 }
 
 .card-comics {
+    &:hover{
+      transform: scale(1.1) rotate(2deg);
+      box-shadow: 0 10px 20px $colorPrincipalSpiderman; /* Brillo como de poder */
+      transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    }
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
     position: relative;
     width: 55%;
     height: 95%;
@@ -84,6 +90,7 @@ $colorPrincipalSpiderman: rgb(88, 0, 0);
       z-index: 3; 
       font-family: monospace;
     }
+    
 
   }
 

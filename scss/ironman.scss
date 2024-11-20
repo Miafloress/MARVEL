@@ -1,5 +1,5 @@
-@import "footer";
-@import "menu";
+@import "menuAlternativo";
+
 .main-image {
     display: flex;
     align-items: center; 
@@ -226,3 +226,5 @@
 .carousel-item img:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+@import "footerAlternativo";

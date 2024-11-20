@@ -112,6 +112,9 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
   }
 
   @media screen and (min-width: 320px) and (max-width: 767px){
+    #cont-carrusel{
+      margin-bottom: 30% !important;
+    }
     .cont-carrusel__productos{
         max-width: 90% !important;
     }

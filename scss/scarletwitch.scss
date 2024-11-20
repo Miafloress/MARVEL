@@ -1,81 +1,10 @@
-@import "footer";
-@import "menu";
+@import "menuAlternativo";
 
-.img-banner{
-    width: 100%;
-    height: 500px;
-    img{
-        margin-top: 3%;
-        width: 100%;
-        height: 500px;
-    }
-}
 
-main{
-    .cards {
-        width: 100%;
-        height: 100%;
-        margin-top: 10%;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        grid-template-columns: repeat(2, 500px);
-        grid-template-rows: repeat(2, 300px);
-        grid-template-areas: "b a" "b c";
-        gap: 50px;
-      
-        .card {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          text-align: center;
-          height: 100%;
-          width: 100%;
-          border-radius: 5px;
-          color: white;
-          cursor: pointer;
-          transition: 400ms;
-      
-          
-      
-          &:hover {
-            transform: scale(1.1);
-            box-shadow: 0 5px 5px #4444;
-          }
-        }
-      
-        &:hover > .card:not(:hover) {
-          filter: blur(1px);
-          transform: scale(0.9, 0.9);
-        }
-    }
-      
-      .img1 {
-        width: 500px;
-        background-image: url(../assets/img/img1-scarlet.jpg);
-        grid-area: a;
-      }
-      
-      .info {
-        width: 500px;
-        background-color: #e70b37;
-        grid-area: b;
 
-        p{
-            padding: 20px;
-            font-size: 14px;
-        }
-      }
-      
-      .img2 {
-        width: 500px;
-        background-image: url(../assets/img/img2-scarlet.jpg);
-        grid-area: c;
-      }
-    
-}  
+@import "footerAlternativo";
+
+
    
 
     
