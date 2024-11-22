@@ -2879,10 +2879,10 @@ section {
       .intro-panteraNegra #intro-panteraNegra__img img:hover {
         transform: scale(1.1) rotate(-2deg); }
 
-#card-comics-line__deadpool {
-  background-color: #390101 !important; }
-  #card-comics-line__deadpool:hover {
-    background-color: #390101 !important; }
+#card-comics-line__panteraNegra {
+  background-color: #340461 !important; }
+  #card-comics-line__panteraNegra:hover {
+    background-color: #121212 !important; }
 
 .cont-comics {
   margin-left: 10%;
@@ -2901,17 +2901,19 @@ section {
     font-weight: 400;
     color: white; }
 
-#buy-btn__deadpool:hover {
-  background-color: black; }
+#buy-btn__panteraNegra {
+  background-color: #340461; }
+  #buy-btn__panteraNegra:hover {
+    background-color: black; }
 
-#cont-carrusel-productos__deadpool {
-  background-color: #390101; }
+#cont-carrusel-productos__panteraNegra {
+  background-color: #340461; }
 
-#carousel-item__deadpool {
+#carousel-item__panteraNegra {
   background-color: #171717; }
 
-#pie-footer__deadpool {
-  background-color: #390101 !important; }
+#pie-footer__panteraNegra {
+  background-color: #340461 !important; }
 
 .grid-comics {
   margin-bottom: 10%;

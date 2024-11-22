@@ -123,10 +123,10 @@ $colorNegroPanteraNegra:#121212;
     }
 }
 
-#card-comics-line__deadpool {
-    background-color: $colorRojoDeadpool !important;
+#card-comics-line__panteraNegra {
+    background-color: $colorVioletaPanteraNegra !important;
     &:hover  {
-        background-color: $colorRojoDeadpool !important;
+        background-color: $colorNegroPanteraNegra !important;
     }
 }
 
@@ -150,22 +150,23 @@ $colorNegroPanteraNegra:#121212;
     }
 }
 
-#buy-btn__deadpool{
+#buy-btn__panteraNegra{
+    background-color: $colorVioletaPanteraNegra;
     &:hover{
     background-color: black;
     }
 } 
 
-#cont-carrusel-productos__deadpool{
-    background-color: $colorRojoDeadpool;
+#cont-carrusel-productos__panteraNegra{
+    background-color: $colorVioletaPanteraNegra;
 }
 
-#carousel-item__deadpool{
+#carousel-item__panteraNegra{
     background-color: rgb(23, 23, 23);
 }
 
-#pie-footer__deadpool{
-    background-color: $colorRojoDeadpool !important;
+#pie-footer__panteraNegra{
+    background-color: $colorVioletaPanteraNegra !important;
 }
 @import "comic-card";
 
