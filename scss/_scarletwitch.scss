@@ -166,19 +166,12 @@ $colorRojoScarlet: rgb(150, 12, 28);
     font-weight: 400;
     color: white;
     overflow: hidden;
-    animation: shimmer 2s infinite;
+    
 }
 
-@keyframes shimmer{
-    0%{
-        text-shadow: 0 0 20px black;
-    }
-    50%{
-        text-shadow: 0 0 30px black;
-    }
-    100%{
-        text-shadow: 0 0 20px black;
-    }
+@import "animaciones";
+#titulos-scarlet{
+    @include destello-pulsante($colorRojoScarlet, $colorRosaScarlet, #fdfdfdb6, "scarletwitch");
 }
 
 #buy-btn__scarlet{

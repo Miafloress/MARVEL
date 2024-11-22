@@ -137,6 +137,7 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
     flex-direction: column;
 }
 
+@import "animaciones";
 .titulos{
     font-size: 30px;
     font-family: $letraTitulo;
@@ -144,22 +145,12 @@ $colorSecundarioSpiderman: rgb(0, 0, 87);
     margin-bottom: 3%;
     font-weight: 400;
     color: white;
-
     overflow: hidden;
-    animation: shimmer 2s infinite;
+    
 }
-@keyframes shimmer {
-    0% {
-      text-shadow: 0 0 20px $colorSecundarioSpiderman;
-    }
-    50% {
-      text-shadow: 0 0 30px $colorPrincipalSpiderman;
-    }
-    100% {
-      text-shadow: 0 0 20px $colorSecundarioSpiderman;
-    }
-  }
-
+#titulos-spiderman{
+    @include destello-pulsante($colorPrincipalSpiderman, $colorSecundarioSpiderman, #fdfdfdb6, "spiderman");
+}
 
 
 @import "comic-card";

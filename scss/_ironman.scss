@@ -160,19 +160,11 @@ $colorDoradoIronman:#B97D10;
     font-weight: 400;
     color: white;
     overflow: hidden;
-    animation: shimmer 2s infinite;
 }
-@keyframes shimmer {
-    0% {
-      text-shadow: 0 0 20px $colorRojoIronman;
-    }
-    50% {
-      text-shadow: 0 0 30px $colorRojoIronmanAlt;
-    }
-    100% {
-      text-shadow: 0 0 20px $colorRojoIronman;
-    }
-  }
+@import "animaciones";
+#titulos-ironman{
+    @include destello-pulsante($colorRojoIronman, $colorDoradoIronman, #fdfdfdb6, "ironman");
+}
 
 #buy-btn__ironman{
     &:hover{

@@ -159,19 +159,12 @@ $colorAzulCapAmerica:#1214b1;
     font-weight: 400;
     color: white;
     overflow: hidden;
-    animation: shimmer 2s infinite;
+    
 }
-@keyframes shimmer {
-    0% {
-      text-shadow: 0 0 20px $colorAzulCapAmerica;
-    }
-    50% {
-      text-shadow: 0 0 30px $colorRojoCapAmerica;
-    }
-    100% {
-      text-shadow: 0 0 20px $colorAzulCapAmerica;
-    }
-  }
+@import "animaciones";
+#titulos-capamerica{
+    @include destello-pulsante($colorAzulCapAmerica, $colorRojoCapAmerica, #fdfdfdb6, "capamerica");
+}
 
 #buy-btn__capamerica{
     &:hover{

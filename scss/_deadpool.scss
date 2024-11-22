@@ -153,22 +153,14 @@ $colorNegroDeadpool:#121212;
     text-align: center;
     margin-bottom: 3%;
     font-weight: 400;
-    color: white;
-
+    color: white !important;
     overflow: hidden;
-    animation: shimmer 2s infinite;
+    
 }
-@keyframes shimmer {
-    0% {
-      text-shadow: 0 0 20px $colorNegroDeadpool;
-    }
-    50% {
-      text-shadow: 0 0 30px $colorRojoDeadpool;
-    }
-    100% {
-      text-shadow: 0 0 20px $colorNegroDeadpool;
-    }
-  }
+@import "animaciones";
+#titulos-deadpool{
+    @include destello-pulsante($colorNegroDeadpool, $colorRojoDeadpool, #fdfdfdb6, "deadpool");
+}
 
 #buy-btn__deadpool{
     &:hover{
