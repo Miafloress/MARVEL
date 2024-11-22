@@ -149,6 +149,21 @@ $colorNegroPanteraNegra:#121212;
         color: white
     }
 }
+.titulos{
+    font-size: 30px;
+    font-family: $letraTitulo;
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: 400;
+    color: white !important;
+    overflow: hidden;
+    
+}
+@import "animaciones";
+#titulos-panteraNegra{
+    @include destello-pulsante($colorNegroDeadpool, $colorVioletaPanteraNegra, #fdfdfdb6, "panteraNegra");
+}
+
 
 #buy-btn__panteraNegra{
     background-color: $colorVioletaPanteraNegra;
