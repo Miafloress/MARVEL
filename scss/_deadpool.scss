@@ -120,10 +120,15 @@ $colorNegroDeadpool:#121212;
     }
 }
 
-#card-comics-line__deadpool {
-    background-color: $colorRojoDeadpool !important;
-    &:hover  {
+#card-comics__deadpool{
+    &:hover{
+      box-shadow: 0 10px 20px white !important;
+    }
+    #card-comics-line__deadpool {
         background-color: $colorRojoDeadpool !important;
+        &:hover  {
+            background-color: $colorRojoDeadpool !important;
+        }
     }
 }
 
@@ -194,6 +199,14 @@ $colorNegroDeadpool:#121212;
     }
     .cont-comics{
         margin-bottom: 10%;
+        #card-comics__deadpool{
+            #card-comics-line__deadpool{
+                background-color: rgba(139, 0, 0, 0) !important;
+            }
+            &:hover  {
+                background-color: $colorRojoDeadpool !important;
+            }
+        }
     }
 }
 
@@ -236,6 +249,17 @@ $colorNegroDeadpool:#121212;
     .cont-comics{
         h2{
             margin-bottom: 10%;
+        }
+        #titulos-deadpool{
+            margin-top: 25%;
+        }
+        #card-comics__deadpool{
+            #card-comics-line__deadpool{
+                background-color: rgba(139, 0, 0, 0) !important;
+            }
+            &:hover  {
+                background-color: $colorRojoDeadpool;
+            }
         }
     }
 }

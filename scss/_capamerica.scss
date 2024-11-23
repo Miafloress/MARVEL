@@ -124,13 +124,14 @@ $colorAzulCapAmerica:#1214b1;
     &:hover{
       box-shadow: 0 10px 20px white !important;
     }
-    .card-comics__line{
+    #card-comics-line__capamerica{
         background-color: $colorAzulCapAmerica !important;
-    &:hover  {
-        background-color: $colorRojoCapAmerica !important;
-    }
+        &:hover  {
+            background-color: $colorAzulCapAmerica !important;
+        }
     }
 }
+
 .cont-comics{
     margin-left: 10%;
     margin-right: 10%;
@@ -198,6 +199,14 @@ $colorAzulCapAmerica:#1214b1;
     }
     .cont-comics{
         margin-bottom: 10%;
+        #card-comics__capamerica{
+            #card-comics-line__capamerica{
+                background-color: rgba(139, 0, 0, 0) !important;
+            }
+            &:hover  {
+                background-color: $colorAzulCapAmerica !important;
+            }
+        }
     }
 }
 
@@ -238,8 +247,20 @@ $colorAzulCapAmerica:#1214b1;
     }
 
     .cont-comics{
+        margin-bottom: 10%;
         h2{
             margin-bottom: 10%;
+        }
+        #titulos-capamerica{
+            margin-top: 25%;
+        }
+        #card-comics__capamerica{
+            #card-comics-line__capamerica{
+                background-color: rgba(139, 0, 0, 0) !important;
+            }
+            &:hover  {
+                background-color: $colorAzulCapAmerica;
+            }
         }
     }
 }
