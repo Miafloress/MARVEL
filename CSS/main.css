@@ -3492,8 +3492,619 @@ section {
   #responsive li a {
     font-size: 18px; } }
 
-#body-ironman {
-  background-image: url(../assets/img/ironman-inicio.jpeg);
+#bodyIronman {
+  background-image: url(../assets/img/body-ironman.png);
+  object-fit: cover;
+  object-position: center;
+  animation: scroll-bg 15s linear infinite; }
+
+@keyframes scroll-bg {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -500px 0; } }
+
+.header-ironman {
+  background-color: #6A0C0B !important; }
+  .header-ironman .submenu__alternativo {
+    background-color: #6A0C0B !important; }
+
+.cont-banner__ironman {
+  margin-top: 1.5%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4%;
+  animation: slideInLeft 1.5s ease-out forwards; }
+  .cont-banner__ironman .banner-ironman {
+    width: 90%;
+    height: 400px;
+    background-color: #AA0505;
+    border-radius: 15px; }
+    .cont-banner__ironman .banner-ironman img {
+      border-radius: 15px;
+      object-fit: contain;
+      object-fit: fill;
+      width: 100%;
+      height: 100%; }
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+.intro-ironman {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(-100%);
+  animation: slideInLeft 1.5s ease-out forwards; }
+  .intro-ironman #intro-ironman__info {
+    transition: background-color 0.5s ease;
+    border-radius: 7px;
+    padding: 0.5%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+    text-align: justify;
+    width: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Bangers", serif;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInText 2s ease forwards; }
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+    .intro-ironman #intro-ironman__info:hover {
+      background-color: #141414c7; }
+  .intro-ironman #intro-ironman__img {
+    margin-right: 5%;
+    margin-left: 2.5%;
+    width: 35%;
+    height: 350px; }
+    .intro-ironman #intro-ironman__img img {
+      width: 100%;
+      height: 100%;
+      border: 5px solid white;
+      outline: 3px solid #6A0C0B;
+      outline-offset: 5px;
+      transition: transform 0.5s ease; }
+      .intro-ironman #intro-ironman__img img:hover {
+        transform: scale(1.1) rotate(-2deg); }
+
+#card-comics__ironman:hover {
+  box-shadow: 0 10px 20px white !important; }
+
+#card-comics__ironman .card-comics__line {
+  background-color: #6A0C0B !important; }
+  #card-comics__ironman .card-comics__line:hover {
+    background-color: #AA0505 !important; }
+
+.cont-comics {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .cont-comics h2 {
+    font-size: 30px;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    margin-bottom: 3.5%;
+    font-weight: 400;
+    color: white; }
+
+.titulos {
+  font-size: 30px;
+  font-family: "Audiowide", sans-serif;
+  text-align: center;
+  margin-bottom: 3%;
+  font-weight: 400;
+  color: white;
+  overflow: hidden; }
+
+#titulos-ironman {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #6A0C0B, 0 0 10px #6A0C0B, 0 0 20px #B97D10, 0 0 40px #B97D10, 0 0 60px #B97D10;
+  animation: ironman-destello-pulsante 2.5s infinite; }
+  #titulos-ironman::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fdfdfdb6, transparent);
+    transform: skewX(-25deg);
+    animation: ironman-barrido-luz 3s infinite; }
+
+@keyframes ironman-destello-pulsante {
+  0%, 100% {
+    text-shadow: 0 0 10px #6A0C0B, 0 0 20px #6A0C0B, 0 0 30px #B97D10, 0 0 50px #B97D10, 0 0 80px #B97D10; }
+  50% {
+    text-shadow: 0 0 15px #B97D10, 0 0 25px #B97D10, 0 0 35px #6A0C0B, 0 0 60px #6A0C0B, 0 0 100px #6A0C0B; } }
+
+@keyframes ironman-barrido-luz {
+  0% {
+    left: -100%; }
+  50% {
+    left: 50%; }
+  100% {
+    left: 100%; } }
+
+#buy-btn__ironman:hover {
+  background-color: #6A0C0B; }
+
+#cont-carrusel-productos__ironman {
+  background-color: #B97D10; }
+
+#carousel-item__ironman {
+  background-color: #6A0C0B; }
+
+#pie-footer__ironman {
+  background-color: #6A0C0B !important; }
+
+.grid-comics {
+  margin-bottom: 10%;
+  width: 100%;
+  height: auto;
+  display: grid;
+  row-gap: 8%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'c1 c2 c3 c4' 'c5 c6 c7 c8'; }
+  .grid-comics #comic1 {
+    grid-area: c1; }
+  .grid-comics #comic2 {
+    grid-area: c2; }
+  .grid-comics #comic3 {
+    grid-area: c3; }
+  .grid-comics #comic4 {
+    grid-area: c4; }
+  .grid-comics #comic5 {
+    grid-area: c5; }
+  .grid-comics #comic6 {
+    grid-area: c6; }
+  .grid-comics #comic7 {
+    grid-area: c7; }
+  .grid-comics #comic8 {
+    grid-area: c8; }
+
+.card-comics {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  position: relative;
+  width: 55%;
+  height: 95%;
+  margin: 0% 22.5%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: #272727; }
+  .card-comics:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 10px 20px #580000;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; }
+  .card-comics .card-comics__img {
+    width: 100%;
+    z-index: 2;
+    height: auto;
+    transition: transform 0.3s ease; }
+    .card-comics .card-comics__img:hover {
+      transform: scale(1.1); }
+  .card-comics .card-comics__info {
+    position: relative;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    z-index: 2; }
+  .card-comics .card-comics__line {
+    position: absolute;
+    top: 315px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: darkred;
+    z-index: 1;
+    transition: height 0.5s ease, top 0.5s ease; }
+  .card-comics:hover .card-comics__line {
+    height: 85px;
+    top: 315px; }
+  .card-comics .card-comics__titulo {
+    font-size: 18px;
+    margin: 0;
+    margin-top: -15px;
+    position: relative;
+    z-index: 3;
+    font-family: monospace; }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-comics {
+    margin-bottom: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'c1 c2'  'c3 c4' 'c5 c6'  'c7 c8'; }
+    .grid-comics #comic1 {
+      grid-area: c1; }
+    .grid-comics #comic2 {
+      grid-area: c2; }
+    .grid-comics #comic3 {
+      grid-area: c3; }
+    .grid-comics #comic4 {
+      grid-area: c4; }
+    .grid-comics #comic5 {
+      grid-area: c5; }
+    .grid-comics #comic6 {
+      grid-area: c6; }
+    .grid-comics #comic7 {
+      grid-area: c7; }
+    .grid-comics #comic8 {
+      grid-area: c8; }
+  .card-comics {
+    transition: background-color 0.5s ease; }
+    .card-comics .card-comics__line {
+      background-color: rgba(139, 0, 0, 0); }
+    .card-comics:hover {
+      background-color: #580000; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .grid-comics {
+    row-gap: 1%;
+    margin-bottom: 50%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'c1'  'c2'  'c3'  'c4' 'c5'  'c6'  'c7'  'c8'; }
+    .grid-comics #comic1 {
+      grid-area: c1; }
+    .grid-comics #comic2 {
+      grid-area: c2; }
+    .grid-comics #comic3 {
+      grid-area: c3; }
+    .grid-comics #comic4 {
+      grid-area: c4; }
+    .grid-comics #comic5 {
+      grid-area: c5; }
+    .grid-comics #comic6 {
+      grid-area: c6; }
+    .grid-comics #comic7 {
+      grid-area: c7; }
+    .grid-comics #comic8 {
+      grid-area: c8; }
+  .card-comics {
+    transition: background-color 0.5s ease; }
+    .card-comics .card-comics__titulo {
+      font-size: 13px;
+      text-align: center; }
+    .card-comics .card-comics__line {
+      background-color: rgba(139, 0, 0, 0); }
+    .card-comics:hover {
+      background-color: #580000; } }
+
+#cont-carrusel {
+  width: 100%;
+  height: auto;
+  margin-bottom: 9%; }
+  #cont-carrusel .cont-titulo__tienda {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.carouselContainer {
+  border-radius: 15px;
+  max-width: 50%;
+  margin: 0 auto; }
+
+.carousel-item {
+  text-align: center;
+  background-color: #580000;
+  color: white;
+  padding: 20px 0; }
+  .carousel-item h2,
+  .carousel-item p,
+  .carousel-item .price {
+    color: white;
+    margin: 0; }
+  .carousel-item img {
+    max-height: 100px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    transition: transform 0.5s ease-in-out; }
+    .carousel-item img:hover {
+      transform: scale(1.1);
+      transform: scale(1.2) rotate(5deg); }
+  .carousel-item .price {
+    font-weight: 500; }
+  .carousel-item h2 {
+    margin-top: 10px; }
+
+.contImgProd {
+  max-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; }
+
+.buy-btn {
+  background-color: #5f1515;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .buy-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+    transform: skewX(-30deg);
+    transition: left 0.5s ease;
+    z-index: -1; }
+  .buy-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    background-color: #420b0b; }
+  .buy-btn:hover::before {
+    left: 100%; }
+
+.cont-carrusel__productos {
+  max-width: 60%;
+  margin: 40px auto;
+  padding: 10px;
+  background-color: #000057;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #cont-carrusel {
+    margin-bottom: 30% !important; }
+  .cont-carrusel__productos {
+    max-width: 90% !important; } }
+
+.pie-footer__alternativo {
+  height: auto;
+  background-color: #464646f1 !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .pie-footer__alternativo .cont-redes-menu__alternativo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .pie-footer__alternativo .cont-redes-menu__alternativo .icono-redes__alternativo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 20px;
+      flex-wrap: wrap; }
+    .pie-footer__alternativo .cont-redes-menu__alternativo .elemen-icono__alternativo {
+      list-style: none; }
+      .pie-footer__alternativo .cont-redes-menu__alternativo .elemen-icono__alternativo .icono__alternativo {
+        color: gray;
+        font-size: 29px;
+        display: inline-block;
+        margin: 0 20px;
+        transition: color 1s, transform 1s; }
+        .pie-footer__alternativo .cont-redes-menu__alternativo .elemen-icono__alternativo .icono__alternativo:hover {
+          transform: translateY(-10px);
+          color: #ffffff; }
+    .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      margin-left: 33px;
+      margin-top: 1%;
+      margin-bottom: 2%;
+      column-gap: 15%; }
+      .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .info-pie__alternativo {
+          color: grey;
+          font-size: 22px;
+          text-decoration: none;
+          margin-bottom: 5px;
+          transition: color 1s; }
+          .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .info-pie__alternativo:hover {
+            color: #ffffff; }
+        .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .submenu-pie__alternativo {
+          width: 100%;
+          margin-top: 5px;
+          font-size: 16px;
+          color: grey;
+          padding: 0;
+          column-gap: 3%; }
+          .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .submenu-pie__alternativo .subelem-pie__alternativo {
+            list-style: none;
+            margin: 2px 0; }
+            .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .submenu-pie__alternativo .subelem-pie__alternativo .subinfo-pie__alternativo {
+              color: grey;
+              text-decoration: none;
+              font-size: 16px;
+              transition: color 1s; }
+              .pie-footer__alternativo .cont-redes-menu__alternativo #menu-pie__alternativo .elem-pie__alternativo .submenu-pie__alternativo .subelem-pie__alternativo .subinfo-pie__alternativo:hover {
+                color: #ffffff; }
+  .pie-footer__alternativo #copyright__alternativo {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: grey; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #menu-pie__alternativo {
+    margin-left: 15px !important; }
+    #menu-pie__alternativo .info-pie__alternativo {
+      font-size: 19px !important; }
+      #menu-pie__alternativo .info-pie__alternativo .subinfo-pie__alternativo {
+        font-size: 15px !important; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #intro-ironman__info {
+    font-size: 16px !important; }
+  #intro-ironman__img img {
+    object-fit: cover; }
+  .cont-comics {
+    margin-bottom: 10%; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .banner-ironman {
+    margin-top: 3.5%;
+    margin-bottom: 3%;
+    width: 93% !important;
+    height: 200px !important;
+    border-radius: 15px; }
+    .banner-ironman img {
+      border-radius: 15px;
+      object-fit: contain;
+      object-fit: fill;
+      width: 100%;
+      height: 100%; }
+  .intro-ironman {
+    flex-direction: column;
+    margin-bottom: 82%; }
+    .intro-ironman #intro-ironman__info {
+      font-size: 14px !important;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%; }
+    .intro-ironman #intro-ironman__img {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 3%; }
+      .intro-ironman #intro-ironman__img #intro-ironman__img img {
+        object-fit: cover; }
+  .cont-comics h2 {
+    margin-bottom: 10%; } }
+
+.header-alternativo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #464646f1;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  animation: slideInLeft 1.5s ease-out; }
+  .header-alternativo .logo-alternativo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px; }
+    .header-alternativo .logo-alternativo .marvel-alternativo {
+      font-size: 48px;
+      color: white;
+      transition: transform 0.3s ease; }
+      .header-alternativo .logo-alternativo .marvel-alternativo:hover {
+        transform: scale(1.2); }
+  .header-alternativo .menu-alternativo ul {
+    list-style: none;
+    display: flex;
+    margin-right: 3%;
+    gap: 5px; }
+    .header-alternativo .menu-alternativo ul .nav-item__alternativo {
+      position: relative; }
+      .header-alternativo .menu-alternativo ul .nav-item__alternativo .nav-link__alternativo {
+        color: rgba(128, 128, 128, 0.634);
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        padding: 10px;
+        transition: color 0.3s ease, transform 0.3s ease; }
+        .header-alternativo .menu-alternativo ul .nav-item__alternativo .nav-link__alternativo:hover {
+          color: white;
+          transform: translateY(-3px); }
+      .header-alternativo .menu-alternativo ul .nav-item__alternativo:hover .submenu__alternativo {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0); }
+      .header-alternativo .menu-alternativo ul .nav-item__alternativo .submenu__alternativo {
+        z-index: 10;
+        margin-top: 10px;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #464646f1;
+        list-style: none;
+        padding: 15px 0;
+        min-width: 150px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; }
+        .header-alternativo .menu-alternativo ul .nav-item__alternativo .submenu__alternativo .nav-item__subAlternativo {
+          padding: 5px 20px;
+          margin-top: 2px;
+          margin-bottom: 2px; }
+          .header-alternativo .menu-alternativo ul .nav-item__alternativo .submenu__alternativo .nav-item__subAlternativo .nav-link__subAlternativo {
+            color: rgba(128, 128, 128, 0.634);
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease; }
+            .header-alternativo .menu-alternativo ul .nav-item__alternativo .submenu__alternativo .nav-item__subAlternativo .nav-link__subAlternativo:hover {
+              color: white; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #responsive nav {
+    margin-left: -20px !important; }
+  #responsive li a {
+    font-size: 13px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #responsive li a {
+    font-size: 18px; } }
+
+#bodyIronman {
+  background-image: url(../assets/img/body-ironman.png);
   object-fit: cover;
   object-position: center;
   animation: scroll-bg 15s linear infinite; }
