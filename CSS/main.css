@@ -2879,9 +2879,12 @@ section {
       .intro-panteraNegra #intro-panteraNegra__img img:hover {
         transform: scale(1.1) rotate(-2deg); }
 
-#card-comics-line__panteraNegra {
+#card-comics__panteraNegra:hover {
+  box-shadow: 0 10px 20px #340461 !important; }
+
+#card-comics__panteraNegra #card-comics-line__panteraNegra {
   background-color: #340461 !important; }
-  #card-comics-line__panteraNegra:hover {
+  #card-comics__panteraNegra #card-comics-line__panteraNegra:hover {
     background-color: #121212 !important; }
 
 .cont-comics {
@@ -3280,7 +3283,11 @@ section {
   #intro-panteraNegra__img img {
     object-fit: cover; }
   .cont-comics {
-    margin-bottom: 10%; } }
+    margin-bottom: 10%; }
+  #card-comics__panteraNegra #card-comics-line__panteraNegra {
+    background-color: rgba(139, 0, 0, 0) !important; }
+  #card-comics__panteraNegra:hover {
+    background-color: #340461; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .banner-panteraNegra {
@@ -3311,7 +3318,13 @@ section {
       .intro-panteraNegra #intro-panteraNegra__img #intro-panteraNegra__img img {
         object-fit: cover; }
   .cont-comics h2 {
-    margin-bottom: 10%; } }
+    margin-bottom: 10%; }
+  .cont-comics #titulos-panteraNegra {
+    margin-top: 25%; }
+  .cont-comics #card-comics__panteraNegra #card-comics-line__panteraNegra {
+    background-color: rgba(139, 0, 0, 0) !important; }
+  .cont-comics #card-comics__panteraNegra:hover {
+    background-color: #340461; } }
 
 .header-alternativo {
   top: 0;

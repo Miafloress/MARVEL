@@ -123,12 +123,19 @@ $colorNegroPanteraNegra:#121212;
     }
 }
 
-#card-comics-line__panteraNegra {
-    background-color: $colorVioletaPanteraNegra !important;
-    &:hover  {
-        background-color: $colorNegroPanteraNegra !important;
+#card-comics__panteraNegra{
+    &:hover{
+        box-shadow: 0 10px 20px $colorVioletaPanteraNegra !important;
+    }
+    #card-comics-line__panteraNegra {
+        background-color: $colorVioletaPanteraNegra !important;
+        &:hover  {
+            background-color: $colorNegroPanteraNegra !important;
+        }
     }
 }
+
+
 
 .cont-comics{
     margin-left: 10%;
@@ -161,7 +168,7 @@ $colorNegroPanteraNegra:#121212;
 }
 @import "animaciones";
 #titulos-panteraNegra{
-    @include destello-pulsante($colorNegroDeadpool, $colorVioletaPanteraNegra, #fdfdfdb6, "panteraNegra");
+    @include destello-pulsante($colorNegroPanteraNegra, $colorVioletaPanteraNegra, #fdfdfdb6, "panteraNegra");
 }
 
 
@@ -198,6 +205,15 @@ $colorNegroPanteraNegra:#121212;
     }
     .cont-comics{
         margin-bottom: 10%;
+    }
+    #card-comics__panteraNegra{
+        
+        #card-comics-line__panteraNegra {
+            background-color: rgba(139, 0, 0, 0) !important;
+        }
+        &:hover  {
+            background-color: $colorVioletaPanteraNegra;
+        }
     }
 }
 
@@ -241,5 +257,19 @@ $colorNegroPanteraNegra:#121212;
         h2{
             margin-bottom: 10%;
         }
+        #titulos-panteraNegra{
+            margin-top: 25%;
+        }
+        #card-comics__panteraNegra{
+        
+            #card-comics-line__panteraNegra {
+                background-color: rgba(139, 0, 0, 0) !important;
+            }
+            &:hover  {
+                background-color: $colorVioletaPanteraNegra;
+            }
+        }
     }
+
+   
 }
