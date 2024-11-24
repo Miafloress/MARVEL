@@ -1,5 +1,7 @@
 $colorRosaScarlet:rgb(154, 23, 45);
-$colorRojoScarlet: rgb(150, 12, 28);
+$colorRojoScarlet: rgb(71, 3, 14);
+$letraTexto: "Cormorant", serif;
+$letraTitulo: "Audiowide", sans-serif;
 
 @import "menuAlternativo";
 @import "comic-card";
@@ -32,7 +34,7 @@ $colorRojoScarlet: rgb(150, 12, 28);
 .header-scarlet{
     background-color: $colorRosaScarlet !important;
     .submenu__alternativo{
-        background-color: $colorRojoScarlet !important;
+        background-color: $colorRosaScarlet !important;
     }
 }
 
@@ -87,6 +89,7 @@ $colorRojoScarlet: rgb(150, 12, 28);
     justify-content: space-between;
     transform: translateX(-100%);
     animation: slideInLeft 1.5s ease-out forwards;
+
     #intro-scarlet__info{
         transition: background-color 0.5 ease;
         padding: 0.5%;
@@ -97,6 +100,7 @@ $colorRojoScarlet: rgb(150, 12, 28);
         width: 50%;
         font-size: 20px;
         font-weight: 500;
+        font-family: $letraTexto;
         color: white;
         opacity: 0;
         transform: translateY(20px);
@@ -140,6 +144,18 @@ $colorRojoScarlet: rgb(150, 12, 28);
     }
 }
 
+#card-comics__scarlet{
+    &:hover{
+      box-shadow: 0 10px 20px $colorRojoScarlet !important;
+    }
+    #card-comics-line__scarlet{
+        background-color: $colorRosaScarlet !important;
+        &:hover  {
+            background-color: $colorRosaScarlet !important;
+        }
+    }
+}
+
 .cont-comics{
     margin-left: 10%;
     margin-right: 10%;
@@ -152,6 +168,7 @@ $colorRojoScarlet: rgb(150, 12, 28);
 
     h2{
         font-size: 30px;
+        font-family: $letraTitulo;
         text-align: center;
         margin-bottom: 3.5%;
         font-weight: 400;
@@ -161,10 +178,11 @@ $colorRojoScarlet: rgb(150, 12, 28);
 
 .titulos{
     font-size: 30px;
+    font-family: $letraTitulo;
     text-align: center;
     margin-bottom: 3%;
     font-weight: 400;
-    color: white;
+    color: white !important;
     overflow: hidden;
     
 }
@@ -175,8 +193,9 @@ $colorRojoScarlet: rgb(150, 12, 28);
 }
 
 #buy-btn__scarlet{
+    background-color: $colorRojoScarlet;
     &:hover{
-        background-color: black;
+    background-color: $colorRosaScarlet;
     }
 }
 
@@ -185,7 +204,7 @@ $colorRojoScarlet: rgb(150, 12, 28);
 }
 
 #carousel-item__scarlet{
-    background-color: black;
+    background-color: $colorRojoScarlet;
 }
 
 #pie-footer__scarlet{
@@ -194,20 +213,29 @@ $colorRojoScarlet: rgb(150, 12, 28);
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    #intro-deadpool__info{
+    #intro-panteraNegra__info{
         font-size: 16px !important;
     }
-    #intro-deadpool__img img{
+    #intro-panteraNegra__img img{
         object-fit: cover;
     }
     .cont-comics{
         margin-bottom: 10%;
     }
+    #card-comics__panteraNegra{
+        
+        #card-comics-line__panteraNegra {
+            background-color: rgba(139, 0, 0, 0) !important;
+        }
+        &:hover  {
+            background-color: $colorRojoScarlet;
+        }
+    }
 }
 
 
 @media screen and (min-width: 320px) and (max-width: 767px){
-    .banner-scarlet{
+    .banner-panteraNegra{
         margin-top: 3.5%;
         margin-bottom: 3%;
         width: 93% !important;
@@ -221,21 +249,21 @@ $colorRojoScarlet: rgb(150, 12, 28);
             height: 100%;
         }
     }
-    .intro-scarlet{
+    .intro-panteraNegra{
         flex-direction: column;
         margin-bottom: 60%;
-        #intro-scarlet__info{
+        #intro-panteraNegra__info{
             font-size: 14px !important;
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
         }
-        #intro-scarlet__img{
+        #intro-panteraNegra__img{
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
             margin-top: 3%;
-            #intro-scarlet__img img{
+            #intro-panteraNegra__img img{
                 object-fit: cover;
             }
         }
@@ -244,6 +272,18 @@ $colorRojoScarlet: rgb(150, 12, 28);
     .cont-comics{
         h2{
             margin-bottom: 10%;
+        }
+        #titulos-panteraNegra{
+            margin-top: 25%;
+        }
+        #card-comics__panteraNegra{
+        
+            #card-comics-line__panteraNegra {
+                background-color: rgba(139, 0, 0, 0) !important;
+            }
+            &:hover  {
+                background-color: $colorRosaScarlet;
+            }
         }
     }
 }
