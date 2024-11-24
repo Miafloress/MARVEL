@@ -4703,6 +4703,86 @@ section {
   #responsive li a {
     font-size: 18px; } }
 
+#body-collabs {
+  background-color: white; }
+
+.cont-banner__collabs {
+  width: 100%;
+  height: auto; }
+  .cont-banner__collabs #banner-collabs__img {
+    object-fit: contain;
+    object-fit: fill;
+    width: 100%;
+    height: 100%; }
+
+.cont-video__collab {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  .cont-video__collab .video-collab__fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; }
+  .cont-video__collab .cont-collab__info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px; }
+    .cont-video__collab .cont-collab__info .btn {
+      padding: 10px 20px;
+      text-transform: uppercase;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 500;
+      color: #ffffff80;
+      text-shadow: none;
+      background: transparent;
+      cursor: pointer;
+      box-shadow: transparent;
+      border: 1px solid #ffffff80;
+      transition: 0.5s ease;
+      user-select: none; }
+      .cont-video__collab .cont-collab__info .btn a {
+        color: white;
+        text-decoration: none; }
+    .cont-video__collab .cont-collab__info .cont-collab__info .btn:hover,
+    .cont-video__collab .cont-collab__info .cont-collab__info.btn:focus {
+      color: #ffffff;
+      background: #008cff;
+      border: 1px solid #008cff;
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+      box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff; }
+
+.sectionPS4 .btn:hover, .sectionPS4 .btn:focus {
+  background: #008cff;
+  border: 1px solid #008cff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff; }
+
+.sectionFN .btn:hover, .sectionFN .btn:focus {
+  background: #19bd27;
+  border: 1px solid #19bd27;
+  box-shadow: 0 0 5px #19bd27, 0 0 20px #19bd27, 0 0 50px #19bd27, 0 0 100px #19bd27; }
+
+.sectionLEGO .btn:hover, .sectionLEGO .btn:focus {
+  background: #feec00;
+  border: 1px solid #feec00;
+  box-shadow: 0 0 5px #feec00, 0 0 20px #feec00, 0 0 50px #feec00, 0 0 100px #feec00; }
+
+.collab-logo {
+  width: 300px;
+  height: 300px; }
+
 .pie-footer__alternativo {
   height: auto;
   background-color: #464646f1 !important;
