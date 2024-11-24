@@ -79,21 +79,20 @@ $letraTitulo: "Audiowide", sans-serif;
 }
     
 .intro-scarlet{
-    margin-top: 5%;
     width: 100%;
     height: 400px;
-    margin-bottom: 7%;
+    margin-bottom: 4%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
     transform: translateX(-100%);
     animation: slideInLeft 1.5s ease-out forwards;
 
     #intro-scarlet__info{
-        transition: background-color 0.5 ease;
-        padding: 0.5%;
+        transition: background-color 0.5s ease;
         border-radius: 7px;
+        padding: 0.5%;
         margin-left: 5%;
         margin-right: 2.5%;
         text-align: justify;
@@ -106,7 +105,7 @@ $letraTitulo: "Audiowide", sans-serif;
         transform: translateY(20px);
         animation: fadeInText 2s ease forwards;
         @keyframes fadeInText {
-            to{
+            to {
                 opacity: 1;
                 transform: translateY(0);
             }
@@ -118,29 +117,21 @@ $letraTitulo: "Audiowide", sans-serif;
     #intro-scarlet__img{
         margin-right: 5%;
         margin-left: 2.5%;
-        width: 32%;
+        width: 35%;
         height: 400px;
-
         img{
             width: 100%;
             height: 100%;
             border: 5px solid black;
             outline: 3px solid $colorRosaScarlet;
             outline-offset: 5px;
-            transition: transform 0.5 ease;
+            transition: transform 0.5s ease;
+            
 
-            &:hover{
+            &:hover {
                 transform: scale(1.1) rotate(-2deg);
             }
         }
-    }
-}
-
-#card-comics-line__scarlet{
-    background-color: $colorRosaScarlet !important;
-
-    &:hover{
-        background-color: $colorRosaScarlet !important;
     }
 }
 
@@ -148,7 +139,7 @@ $letraTitulo: "Audiowide", sans-serif;
     &:hover{
       box-shadow: 0 10px 20px $colorRojoScarlet !important;
     }
-    #card-comics-line__scarlet{
+    #card-comic-line__scarlet{
         background-color: $colorRosaScarlet !important;
         &:hover  {
             background-color: $colorRosaScarlet !important;
@@ -212,30 +203,8 @@ $letraTitulo: "Audiowide", sans-serif;
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    #intro-panteraNegra__info{
-        font-size: 16px !important;
-    }
-    #intro-panteraNegra__img img{
-        object-fit: cover;
-    }
-    .cont-comics{
-        margin-bottom: 10%;
-    }
-    #card-comics__panteraNegra{
-        
-        #card-comics-line__panteraNegra {
-            background-color: rgba(139, 0, 0, 0) !important;
-        }
-        &:hover  {
-            background-color: $colorRojoScarlet;
-        }
-    }
-}
-
-
 @media screen and (min-width: 320px) and (max-width: 767px){
-    .banner-panteraNegra{
+    .banner-scarlet{
         margin-top: 3.5%;
         margin-bottom: 3%;
         width: 93% !important;
@@ -249,21 +218,22 @@ $letraTitulo: "Audiowide", sans-serif;
             height: 100%;
         }
     }
-    .intro-panteraNegra{
+    .intro-scarlet{
         flex-direction: column;
         margin-bottom: 60%;
-        #intro-panteraNegra__info{
+        #intro-scarlet__info{
             font-size: 14px !important;
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
         }
-        #intro-panteraNegra__img{
+        #intro-scarlet__img{
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
             margin-top: 3%;
-            #intro-panteraNegra__img img{
+            margin-bottom: 5%;
+            #intro-scarlet__img img{
                 object-fit: cover;
             }
         }
@@ -271,14 +241,15 @@ $letraTitulo: "Audiowide", sans-serif;
 
     .cont-comics{
         h2{
+            margin-top: 100% !important;
             margin-bottom: 10%;
         }
-        #titulos-panteraNegra{
+        #titulos-scarlet{
             margin-top: 25%;
         }
-        #card-comics__panteraNegra{
+        #card-comics__scarlet{
         
-            #card-comics-line__panteraNegra {
+            #card-comics-line__scarlet {
                 background-color: rgba(139, 0, 0, 0) !important;
             }
             &:hover  {
