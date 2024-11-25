@@ -100,7 +100,7 @@ $colorDoradoIronman:#B97D10;
         }
         
     }
-    #intro-bWidow__img{
+    #intro-ironman__img{
         margin-right: 5%;
         margin-left: 2.5%;
         width: 35%;
@@ -219,22 +219,23 @@ $colorDoradoIronman:#B97D10;
     }
     .intro-ironman{
         flex-direction: column;
-        margin-bottom: 82%;
+        margin-bottom: 70%;
         #intro-ironman__info{
             font-size: 14px !important;
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
+            margin-bottom: 5% !important;
         }
         #intro-ironman__img{
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
-            margin-top: 3%;
             #intro-ironman__img img{
                 object-fit: cover;
             }
         }
+        
     }
 
     .cont-comics{
