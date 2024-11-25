@@ -4,13 +4,19 @@ $colorRojoBW: #530100;
 $colorRojoBWAlt: #771211;
 $colorNegroBW: #181818;
 
+@import "menuAlternativo";
+@import "comic-card";
+@import "carruselProductos";
+@import "footerAlternativo";
+
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     
   }
 
-#body-bWidow{
+#bodybWidow{
     background-image: url(../assets/img/fondo-blackwidow.png);
     object-fit: cover;
     object-position: center;
@@ -24,8 +30,6 @@ $colorNegroBW: #181818;
       background-position: -500px 0;
     }
 }
-
-@import "menuAlternativo";
 
 .header-bWidow{
     background-color: $colorNegroBW !important ;
@@ -127,6 +131,18 @@ $colorNegroBW: #181818;
     }
 }
 
+#card-comics__bWidow{
+    &:hover{
+      box-shadow: 0 10px 20px $colorRojoBW !important;
+    }
+    #card-comic-line__bWidow{
+        background-color: $colorRojoBWAlt !important;
+        &:hover  {
+            background-color: $colorRojoBWAlt !important;
+        }
+    }
+}
+
 .cont-comics{
     margin-left: 10%;
     margin-right: 10%;
@@ -136,6 +152,15 @@ $colorNegroBW: #181818;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    h2{
+        font-size: 30px;
+        font-family: $letraTitulo;
+        text-align: center;
+        margin-bottom: 3.5%;
+        font-weight: 400;
+        color: white;
+    }
 }
 
 @import "animaciones";
@@ -153,12 +178,20 @@ $colorNegroBW: #181818;
     @include destello-pulsante($colorNegroBW, $colorRojoBW, #fdfdfdb6, "blackwidow");
 }
 
+#buy-btn__bWidow{
+    background-color: $colorNegroBW;
+    &:hover{
+    background-color: $colorRojoBW;
+    }
+}
 
-@import "comic-card";
+#cont-carrusel-productos__bWidow{
+    background-color: $colorRojoBW;
+}
 
-@import "carruselProductos";
-
-@import "footerAlternativo";
+#carousel-item__bWidow{
+    background-color: $colorNegroBW;
+}
 
 #pie-footer__bWidow{
     background-color: $colorNegroBW !important;
@@ -212,7 +245,6 @@ $colorNegroBW: #181818;
         }
         
     }
-
     .cont-comics{
         h2{
             margin-bottom: 10%;
