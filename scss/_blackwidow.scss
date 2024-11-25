@@ -1,11 +1,16 @@
-@import "menuAlternativo";
-
 $letraTexto: "Cormorant", serif;
 $letraTitulo: "Audiowide", sans-serif;
 $colorRojoBW: #530100;
 $colorRojoBWAlt: #771211;
 $colorNegroBW: #181818;
-#bodybWidow{
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+
+#body-bWidow{
     background-image: url(../assets/img/fondo-blackwidow.png);
     object-fit: cover;
     object-position: center;
@@ -18,14 +23,17 @@ $colorNegroBW: #181818;
     to {
       background-position: -500px 0;
     }
-  }
+}
+
+@import "menuAlternativo";
 
 .header-bWidow{
-    background-color: $colorNegroBW !important;
+    background-color: $colorNegroBW !important ;
     .submenu__alternativo{
         background-color: $colorNegroBW !important;
     }
 }
+
 .cont-banner__bWidow{
     margin-top: 1.5%;
     width: 100%;
@@ -38,7 +46,6 @@ $colorNegroBW: #181818;
     .banner-bWidow{
         width: 90%;
         height: 400px;
-        background-color: $colorRojoBWAlt;
         border-radius: 15px;
         img{
             border-radius: 15px;
@@ -46,6 +53,7 @@ $colorNegroBW: #181818;
             object-fit: fill;
             width: 100%;
             height: 100%;
+            
         }
     }
 }
@@ -62,7 +70,7 @@ $colorNegroBW: #181818;
       opacity: 1;
     }
   }
-  .intro-bWidow{
+.intro-bWidow{
     width: 100%;
     height: 400px;
     margin-bottom: 4%;
@@ -74,8 +82,8 @@ $colorNegroBW: #181818;
     animation: slideInLeft 1.5s ease-out forwards;
     #intro-bWidow__info{
         transition: background-color 0.5s ease;
-        border-radius: 7px;
         padding: 0.5%;
+        border-radius: 7px;
         margin-left: 5%;
         margin-right: 2.5%;
         text-align: justify;
@@ -106,8 +114,8 @@ $colorNegroBW: #181818;
         img{
             width: 100%;
             height: 100%;
-            border: 5px solid white;
-            outline: 3px solid $colorNegroBW;
+            border: 5px solid $colorNegroBW;
+            outline: 3px solid $colorRojoBW;
             outline-offset: 5px;
             transition: transform 0.5s ease;
             
@@ -119,17 +127,6 @@ $colorNegroBW: #181818;
     }
 }
 
-#card-comics__bWidow{
-    &:hover{
-      box-shadow: 0 10px 20px white !important;
-    }
-    .card-comics__line{
-        background-color: $colorNegroBW !important;
-    &:hover  {
-        background-color: $colorRojoBWAlt !important;
-    }
-    }
-}
 .cont-comics{
     margin-left: 10%;
     margin-right: 10%;
@@ -139,17 +136,9 @@ $colorNegroBW: #181818;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    h2{
-        font-size: 30px;
-        font-family: $letraTitulo;
-        text-align: center;
-        margin-bottom: 3.5%;
-        font-weight: 400;
-        color: white
-    }
 }
 
+@import "animaciones";
 .titulos{
     font-size: 30px;
     font-family: $letraTitulo;
@@ -158,43 +147,67 @@ $colorNegroBW: #181818;
     font-weight: 400;
     color: white;
     overflow: hidden;
+    
 }
-@import "animaciones";
-
 #titulos-bWidow{
-    @include destello-pulsante($colorRojoBW, $colorNegroBW, #fdfdfdb6, "Black Widow");
+    @include destello-pulsante($colorNegroBW, $colorRojoBW, #fdfdfdb6, "blackwidow");
 }
 
-#buy-btn__bWidow{
-    &:hover{
-    background-color: $colorRojoBW;
-    }
-} 
 
-#cont-carrusel-productos__bWidow{
-    background-color: $colorRojoBW;
-}
-
-#carousel-item__bWidow{
-    background-color: $colorNegroBW;
-}
-#pie-footer__bWidow{
-    background-color: $colorNegroBW !important;
-}
 @import "comic-card";
 
 @import "carruselProductos";
 
 @import "footerAlternativo";
 
+#pie-footer__bWidow{
+    background-color: $colorNegroBW !important;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
+    .banner-bWidow{
+        height: 350px !important;
+    }
     #intro-bWidow__info{
         font-size: 16px !important;
     }
     #intro-bWidow__img img{
         object-fit: cover;
     }
-    .cont-comics{
-        margin-bottom: 10%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .banner-bWidow{
+        width: 93% !important;
+        height: 200px !important;
+        border-radius: 15px;
+        img{
+            border-radius: 15px;
+            object-fit: contain;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .intro-bWidow{
+        flex-direction: column;
+        margin-bottom: 70%;
+        #intro-bWidow__info{
+            font-size: 14px !important;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 5% !important;
+        }
+        #intro-bWidow__img{
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            #intro-bWidow__img img{
+                object-fit: cover;
+            }
+        }
+        
     }
 }
