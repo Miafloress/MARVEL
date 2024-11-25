@@ -356,6 +356,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-comics {
+    margin-top: 10%;
     row-gap: 1%;
     margin-bottom: 50%;
     grid-template-columns: 1fr;
@@ -446,6 +447,9 @@
   overflow: hidden;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .buy-btn a {
+    color: white;
+    text-decoration: none; }
   .buy-btn::before {
     content: '';
     position: absolute;
@@ -987,6 +991,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-comics {
+    margin-top: 10%;
     row-gap: 1%;
     margin-bottom: 50%;
     grid-template-columns: 1fr;
@@ -1077,6 +1082,9 @@
   overflow: hidden;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .buy-btn a {
+    color: white;
+    text-decoration: none; }
   .buy-btn::before {
     content: '';
     position: absolute;
@@ -1894,6 +1902,7 @@ section {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-comics {
+    margin-top: 10%;
     row-gap: 1%;
     margin-bottom: 50%;
     grid-template-columns: 1fr;
@@ -1984,6 +1993,9 @@ section {
   overflow: hidden;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .buy-btn a {
+    color: white;
+    text-decoration: none; }
   .buy-btn::before {
     content: '';
     position: absolute;
@@ -2341,6 +2353,7 @@ section {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-comics {
+    margin-top: 10%;
     row-gap: 1%;
     margin-bottom: 50%;
     grid-template-columns: 1fr;
@@ -2431,6 +2444,9 @@ section {
   overflow: hidden;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .buy-btn a {
+    color: white;
+    text-decoration: none; }
   .buy-btn::before {
     content: '';
     position: absolute;
@@ -2776,10 +2792,9 @@ section {
       .intro-scarlet #intro-scarlet__img #intro-scarlet__img img {
         object-fit: cover; }
   .cont-comics h2 {
-    margin-top: 100% !important;
     margin-bottom: 10%; }
   .cont-comics #titulos-scarlet {
-    margin-top: 25%; }
+    margin-top: 100% !important; }
   .cont-comics #card-comics__scarlet #card-comics-line__scarlet {
     background-color: rgba(139, 0, 0, 0) !important; }
   .cont-comics #card-comics__scarlet:hover {
@@ -3145,6 +3160,7 @@ section {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-comics {
+    margin-top: 10%;
     row-gap: 1%;
     margin-bottom: 50%;
     grid-template-columns: 1fr;
@@ -3235,6 +3251,9 @@ section {
   overflow: hidden;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .buy-btn a {
+    color: white;
+    text-decoration: none; }
   .buy-btn::before {
     content: '';
     position: absolute;
@@ -3776,6 +3795,7 @@ section {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-comics {
+    margin-top: 10%;
     row-gap: 1%;
     margin-bottom: 50%;
     grid-template-columns: 1fr;
@@ -3866,6 +3886,9 @@ section {
   overflow: hidden;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .buy-btn a {
+    color: white;
+    text-decoration: none; }
   .buy-btn::before {
     content: '';
     position: absolute;
@@ -4397,6 +4420,7 @@ section {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .grid-comics {
+    margin-top: 10%;
     row-gap: 1%;
     margin-bottom: 50%;
     grid-template-columns: 1fr;
@@ -4487,6 +4511,9 @@ section {
   overflow: hidden;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .buy-btn a {
+    color: white;
+    text-decoration: none; }
   .buy-btn::before {
     content: '';
     position: absolute;
