@@ -1,22 +1,62 @@
 @import "menuAlternativo";
 
 #body-collabs{
-    background-color: rgb(255, 255, 255);
+    background-color:rgb(17, 16, 16);
 }
+
+.cards {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    #card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 700px;
+        width: 90%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 400ms;
+            
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+  }
+    
 
 .cont-banner__collabs{
     width: 100%;
     height: auto;
-    
-        #banner-collabs__img{
-            object-fit: contain;
-            object-fit: fill;
-            width: 100%;
-            height: 100%;
-        }
-    
+    animation: slideInLeft 1.5s ease-out forwards;
+    #banner-collabs__img{
+        object-fit: contain;
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }   
 }
 
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
 
 .cont-video__collab {
     position: relative;
@@ -103,3 +143,18 @@ $sectionCollabs: (
 }
 
 @import "footerAlternativo";
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+   #card{
+    height: 200px !important;
+   }
+   .btn{
+    font-size: 14px !important;
+   }
+
+   .collab-logo{
+    width: 100px;
+    height: 100px;
+   }
+}

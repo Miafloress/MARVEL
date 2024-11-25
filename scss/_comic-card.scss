@@ -70,7 +70,7 @@ $colorPrincipalSpiderman: rgb(88, 0, 0);
     }
     .card-comics__line {
       position: absolute;
-      top: 315px; 
+      top: 260px; 
       left: 0;
       width: 100%;
       height: 4px; 
@@ -79,8 +79,8 @@ $colorPrincipalSpiderman: rgb(88, 0, 0);
       transition: height 0.5s ease, top 0.5s ease;
     }
     &:hover .card-comics__line {
-      height: 85px; 
-      top: 315px; 
+      height: 100px; 
+      top: 260px; 
     }
     .card-comics__titulo {
       font-size: 18px;

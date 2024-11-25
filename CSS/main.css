@@ -307,7 +307,7 @@
     z-index: 2; }
   .card-comics .card-comics__line {
     position: absolute;
-    top: 315px;
+    top: 260px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -315,8 +315,8 @@
     z-index: 1;
     transition: height 0.5s ease, top 0.5s ease; }
   .card-comics:hover .card-comics__line {
-    height: 85px;
-    top: 315px; }
+    height: 100px;
+    top: 260px; }
   .card-comics .card-comics__titulo {
     font-size: 18px;
     margin: 0;
@@ -942,7 +942,7 @@
     z-index: 2; }
   .card-comics .card-comics__line {
     position: absolute;
-    top: 315px;
+    top: 260px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -950,8 +950,8 @@
     z-index: 1;
     transition: height 0.5s ease, top 0.5s ease; }
   .card-comics:hover .card-comics__line {
-    height: 85px;
-    top: 315px; }
+    height: 100px;
+    top: 260px; }
   .card-comics .card-comics__titulo {
     font-size: 18px;
     margin: 0;
@@ -1853,7 +1853,7 @@ section {
     z-index: 2; }
   .card-comics .card-comics__line {
     position: absolute;
-    top: 315px;
+    top: 260px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -1861,8 +1861,8 @@ section {
     z-index: 1;
     transition: height 0.5s ease, top 0.5s ease; }
   .card-comics:hover .card-comics__line {
-    height: 85px;
-    top: 315px; }
+    height: 100px;
+    top: 260px; }
   .card-comics .card-comics__titulo {
     font-size: 18px;
     margin: 0;
@@ -2304,7 +2304,7 @@ section {
     z-index: 2; }
   .card-comics .card-comics__line {
     position: absolute;
-    top: 315px;
+    top: 260px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -2312,8 +2312,8 @@ section {
     z-index: 1;
     transition: height 0.5s ease, top 0.5s ease; }
   .card-comics:hover .card-comics__line {
-    height: 85px;
-    top: 315px; }
+    height: 100px;
+    top: 260px; }
   .card-comics .card-comics__titulo {
     font-size: 18px;
     margin: 0;
@@ -3111,7 +3111,7 @@ section {
     z-index: 2; }
   .card-comics .card-comics__line {
     position: absolute;
-    top: 315px;
+    top: 260px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -3119,8 +3119,8 @@ section {
     z-index: 1;
     transition: height 0.5s ease, top 0.5s ease; }
   .card-comics:hover .card-comics__line {
-    height: 85px;
-    top: 315px; }
+    height: 100px;
+    top: 260px; }
   .card-comics .card-comics__titulo {
     font-size: 18px;
     margin: 0;
@@ -3746,7 +3746,7 @@ section {
     z-index: 2; }
   .card-comics .card-comics__line {
     position: absolute;
-    top: 315px;
+    top: 260px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -3754,8 +3754,8 @@ section {
     z-index: 1;
     transition: height 0.5s ease, top 0.5s ease; }
   .card-comics:hover .card-comics__line {
-    height: 85px;
-    top: 315px; }
+    height: 100px;
+    top: 260px; }
   .card-comics .card-comics__titulo {
     font-size: 18px;
     margin: 0;
@@ -4198,7 +4198,7 @@ section {
     z-index: 2; }
   .card-comics .card-comics__line {
     position: absolute;
-    top: 315px;
+    top: 260px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -4206,8 +4206,8 @@ section {
     z-index: 1;
     transition: height 0.5s ease, top 0.5s ease; }
   .card-comics:hover .card-comics__line {
-    height: 85px;
-    top: 315px; }
+    height: 100px;
+    top: 260px; }
   .card-comics .card-comics__titulo {
     font-size: 18px;
     margin: 0;
@@ -4775,16 +4775,49 @@ section {
     font-size: 18px; } }
 
 #body-collabs {
-  background-color: white; }
+  background-color: #111010; }
+
+.cards {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px; }
+  .cards #card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 700px;
+    width: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms; }
+    .cards #card:hover {
+      transform: scale(1.1, 1.1); }
 
 .cont-banner__collabs {
   width: 100%;
-  height: auto; }
+  height: auto;
+  animation: slideInLeft 1.5s ease-out forwards; }
   .cont-banner__collabs #banner-collabs__img {
     object-fit: contain;
     object-fit: fill;
     width: 100%;
     height: 100%; }
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
 
 .cont-video__collab {
   position: relative;
@@ -4955,6 +4988,15 @@ section {
   #copyright__alternativo {
     margin-top: 2%;
     font-size: 12px !important; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #card {
+    height: 200px !important; }
+  .btn {
+    font-size: 14px !important; }
+  .collab-logo {
+    width: 100px;
+    height: 100px; } }
 
 * {
   margin: 0;
